@@ -62,7 +62,7 @@
 .expert-body {
   padding: 20px;
   overflow-y: auto;         /* ✅ scrolling */
-  height: calc(100vh - 60px); /* ✅ header ki height minus */
+ 
 }
 
       /* Sticky Tab */
@@ -533,7 +533,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>Providing compassionate, ethical, and research-driven mental health services for all age groups.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -551,7 +551,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>Scientific and standardized psychological testing for children, adolescents, and adults.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -569,7 +569,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>We envision a society where mental health is accessible, stigma-free, and supported by science.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -587,7 +587,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>Our mission is to enhance emotional well-being through high-quality clinical services and community outreach.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -605,7 +605,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>Providing CBT, DBT, family therapy, child counselling, and adult psychotherapy.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -623,7 +623,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>Hands-on training for students, counsellors, and emerging mental health professionals.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -641,7 +641,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>Our team contributes to national and international mental health research initiatives.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -659,7 +659,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                             <p>Workshops, school programs, counselling camps, and community mental health training.</p>
 
                             <div class="slider-btn">
-                                <a class="default-btn" href="contact.html"><span>Book Appointment</span></a>
+                                <a class="default-btn" href="book-appointment.php"><span>Book Appointment</span></a>
                             </div>
                         </div>
                     </div>
@@ -1097,56 +1097,6 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
 </section>
 
 
-<!-- ASK THE EXPERT TAB -->
-<div class="expert-tab" id="expertTab">
-  Ask the <span>Expert</span>
-</div>
-
-<!-- ASK THE EXPERT PANEL -->
-<div class="expert-panel" id="expertPanel">
-
-  <div class="expert-header">
-    <h5>Ask the Expert</h5>
-    <span id="closeExpert">✕</span>
-  </div>
-
-  <div class="expert-body">
-    <p class="text-muted small">
-      Get expert guidance for therapy, counselling, academics & mental health.
-    </p>
-
-    <form>
-
-      <label>Full Name</label>
-      <input type="text" placeholder="Your Name">
-
-      <label>Mobile Number</label>
-      <input type="tel" placeholder="+91 XXXXX XXXXX">
-
-      <label>Select Expert</label>
-      <select>
-        <option>Psychologist</option>
-        <option>Speech Therapist</option>
-        <option>Occupational Therapist</option>
-        <option>Academic Mentor</option>
-        <option>Counsellor</option>
-      </select>
-
-      <label>Consultation Mode</label>
-      <select>
-        <option>Online</option>
-        <option>Offline</option>
-      </select>
-
-      <label>Your Question</label>
-      <textarea rows="3"
-        placeholder="Write your concern or question..."></textarea>
-
-      <button type="submit">Submit Query</button>
-    </form>
-  </div>
-
-</div>
 
 
 
@@ -1224,19 +1174,7 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
     else sliderPsych.scrollBy({ left: 340, behavior: 'smooth' });
   }, 4500);
 </script>
-<script>
-const expertTab = document.getElementById("expertTab");
-const expertPanel = document.getElementById("expertPanel");
-const closeExpert = document.getElementById("closeExpert");
 
-expertTab.onclick = () => {
-  expertPanel.classList.add("open");
-};
-
-closeExpert.onclick = () => {
-  expertPanel.classList.remove("open");
-};
-</script>
 
 </body>
 

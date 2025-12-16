@@ -30,7 +30,7 @@
             <div class="col-lg-3 col-sm-6 mb-4">
                 <h4 class="footer-title">Get in Touch</h4>
                 <ul class="footer-list">
-                    <li><i class="bx bxs-phone"></i> <a href="tel:+91915223190284">+91 91523190284</a></li>
+                    <li><i class="bx bxs-phone"></i> <a href="tel:+915223190284">+915223190284</a></li>
                     <li><i class="bx bxs-envelope"></i> <a href="mailto:imhrcindia@gmail.com">imhrcindia@gmail.com</a></li>
                     <li><p><span><i class="bx bxs-map"></i></span>1040 B, Near Mount Carmel School, Sector-C, Mahanagar, Lucknow, Uttar Pradesh 226006</p></li>
                   
@@ -132,6 +132,56 @@
   </div>
 
 </div>
+<!-- ASK THE EXPERT TAB -->
+<div class="expert-tab" id="expertTab">
+  Ask the <span>Expert</span>
+</div>
+
+<!-- ASK THE EXPERT PANEL -->
+<div class="expert-panel" id="expertPanel">
+
+  <div class="expert-header">
+    <h5>Ask the Expert</h5>
+    <span id="closeExpert">✕</span>
+  </div>
+
+  <div class="expert-body">
+    <p class="text-muted small">
+      Get expert guidance for therapy, counselling, academics & mental health.
+    </p>
+
+    <form>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Your Name">
+
+      <label>Mobile Number</label>
+      <input type="tel" placeholder="+91 XXXXX XXXXX">
+
+      <label>Select Expert</label>
+      <select>
+        <option>Psychologist</option>
+        <option>Speech Therapist</option>
+        <option>Occupational Therapist</option>
+        <option>Academic Mentor</option>
+        <option>Counsellor</option>
+      </select>
+
+      <label>Consultation Mode</label>
+      <select>
+        <option>Online</option>
+        <option>Offline</option>
+      </select>
+
+      <label>Your Question</label>
+      <textarea rows="3"
+        placeholder="Write your concern or question..."></textarea>
+
+      <button type="submit">Submit Query</button>
+    </form>
+  </div>
+
+</div>
 
 <style>
     button#closeChat {
@@ -228,6 +278,32 @@
   font-size: 18px;
   cursor: pointer;
 }
+ .expert-panel {
+  position: fixed;
+  right: -360px;
+  top: 0;
+  width: 360px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -10px 0 30px rgba(0,0,0,.15);
+  transition: 0.4s;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;   /* ✅ important */
+}
+
+/* Header fixed height */
+.expert-header {
+  flex-shrink: 0;
+}
+
+/* Body scrollable */
+.expert-body {
+  padding: 20px;
+  overflow-y: auto;  
+text-align: left;
+ 
+}
 
 </style>
     <script>
@@ -296,4 +372,17 @@ function autoReply(msg) {
   `;
   chatBody.scrollTop = chatBody.scrollHeight;
 }
+</script>
+<script>
+const expertTab = document.getElementById("expertTab");
+const expertPanel = document.getElementById("expertPanel");
+const closeExpert = document.getElementById("closeExpert");
+
+expertTab.onclick = () => {
+  expertPanel.classList.add("open");
+};
+
+closeExpert.onclick = () => {
+  expertPanel.classList.remove("open");
+};
 </script>

@@ -37,28 +37,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Title -->
     <title>IMHRC</title>
-</head>
-
-<body>
-
-
-   <?php include 'includes/header.php'; ?>
-   	<!-- Start Page Title Area -->
-<div class="page-title-wave">
-  <div class="container">
-    <h2>About IMHRC</h2>
-    <p class="inde">Home › About Us</p>
-  </div>
-
-  <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#ffffff" fill-opacity="1" 
-      d="M0,64L48,90.7C96,117,192,171,288,170.7C384,171,480,117,576,85.3C672,53,768,43,864,74.7C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,
-      1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-    </path>
-  </svg>
-</div>
-
-<style>
+    <style>
 /* GLOBAL COLORS */
 :root {
   --primary: #6a11cb;
@@ -161,13 +140,34 @@ section.who-we-are-section h2 {
 .team-card h4 { margin-top: 15px; font-weight: 700; }
 .team-card span { color: var(--primary); font-weight: 600; }
 </style>
+</head>
+
+<body>
+
+
+   <?php include 'includes/header.php'; ?>
+   	<!-- Start Page Title Area -->
+<div class="page-title-wave">
+  <div class="container">
+    <h2>About Us</h2>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="#ffffff" fill-opacity="1" 
+      d="M0,64L48,90.7C96,117,192,171,288,170.7C384,171,480,117,576,85.3C672,53,768,43,864,74.7C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,
+      1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+</div>
+
+
 <section class="under-ipyf-section py-5" style="background:#f4f7ff;">
     <div class="container">
         <div class="text-center mb-5">
-            <span class="badge px-4 py-2 mb-2" style="background:#2575fc; color:#fff; border-radius:20px;">Under IPYF</span>
+            <span class="badge px-4 py-2 mb-2" style="font-size: 18px;background:#2575fc; color:#fff; border-radius:20px;">Under IPYF</span>
             <h2 class="fw-bold display-5">IMHRC’s Foundation Under IPYF</h2>
             <p class="mt-3 fs-5" >
-                IPYF (Indian Positive Youth Foundation) is a national-level organisation working to build emotionally
+                IPYF (Indian Progressive Youth Forum) is a national-level organisation working to build emotionally
                 strong, mentally resilient, and socially responsible youth. IMHRC operates as a specialised mental
                 health & rehabilitation vertical under IPYF, creating pathways for emotional wellbeing, behavioural
                 development, and lifelong psychological growth.
@@ -280,7 +280,7 @@ section.who-we-are-section h2 {
 <section class="who-we-are-section py-5" style=" color:#000;">
     <div class="container">
         <div class="text-center mb-5">
-            <span class="badge px-4 py-2 mb-2" style="    background: rgb(29 39 75 / 99%); border-radius:20px;">Who We Are</span>
+            <span class="badge px-4 py-2 mb-2" style="    background: rgb(29 39 75 / 99%); border-radius:20px;    font-size: 20px;">About IMHRC</span>
             <h2 class="fw-bold display-5">India’s Leading Mental Healthcare & Rehabilitation Network</h2>
             <p class="mt-3 fs-5" >
                 IMHRC (Institute of Mental Health & Rehabilitation Centre) is a premier organisation under the
@@ -316,14 +316,7 @@ section.who-we-are-section h2 {
 <!-- WHO WE ARE SECTION -->
 <section class="who-we-are py-5">
     <div class="container">
-        
-        <div class="section-title text-center mb-5">
-            <h2 class="fw-bold">Who We Are</h2>
-            <p class="text-muted">
-                We are a globally recognized institution under <strong>IPYF</strong>, dedicated to 
-                Mental Health, Rehabilitation, Research, Training, and International Education.
-            </p>
-        </div>
+       
 
         <div class="row align-items-center g-5">
 

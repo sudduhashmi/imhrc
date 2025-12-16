@@ -245,11 +245,26 @@ display: flex;
   cursor: pointer;
 }
 
-
-
 .btn-solid:hover {
   background-color: #45a049;
 }
+
+.section-title {
+    font-weight: 600;
+    border-bottom: 2px solid #019ad3;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.terms-list {
+    padding-left: 18px;
+}
+
+.terms-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
 
  </style>
 </head>
@@ -333,7 +348,9 @@ display: flex;
        
       </div>
        <div class="expert-actions">
-          <a href="overview-details.php" class="btn-outline">View Full Profile</a>
+           <a href="javascript:void(0)" class="btn-outline" data-bs-toggle="modal" data-bs-target="#expertModal">
+    View Full Profile
+</a>
           <a href="overview-details.php" class="btn-solid">Book Appointment</a>
         </div>
     </div>
@@ -361,7 +378,9 @@ display: flex;
        
       </div>
         <div class="expert-actions">
-          <a href="overview-details.php" class="btn-outline">View Full Profile</a>
+         <a href="javascript:void(0)" class="btn-outline" data-bs-toggle="modal" data-bs-target="#expertModal">
+    View Full Profile
+</a>
           <a href="overview-details.php" class="btn-solid">Book Appointment</a>
         </div>
     </div>
@@ -389,7 +408,9 @@ display: flex;
       
       </div>
         <div class="expert-actions">
-          <a href="overview-details.php" class="btn-outline">View Full Profile</a>
+          <a href="javascript:void(0)" class="btn-outline" data-bs-toggle="modal" data-bs-target="#expertModal">
+    View Full Profile
+</a>
           <a href="overview-details.php" class="btn-solid">Book Appointment</a>
         </div>
     </div>
@@ -398,6 +419,71 @@ display: flex;
 </section>
 
     <!-- bottom CTA -->
+<div class="modal fade" id="expertModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Expert Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+
+        <!-- Profile Section -->
+        <div class="row align-items-start mb-4">
+          <div class="col-md-4 text-center">
+            <img src="assets/img/Dr Garima Singh.jpeg" class="img-fluid rounded-3 mb-3" alt="">
+          </div>
+
+          <div class="col-md-8">
+            <h4 class="fw-bold">Dr. Garima Singh</h4>
+            <p class="mb-1">Clinical Psychologist | M.Phil, Ph.D</p>
+
+            <p><strong>Experience:</strong> 9 Years</p>
+            <p><strong>Expertise:</strong> Mental illness, Childhood & Adolescent Mental Health, CBT</p>
+
+            <span class="badge bg-primary px-3 py-2">
+              Mon – Fri : 11:00 AM – 7:00 PM
+            </span>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="mb-4">
+          <h5 class="section-title">About Expert</h5>
+          <p>
+            Dr. Garima Singh is a highly experienced Clinical Psychologist specializing in mental
+            health issues among children, adolescents, and adults. She uses evidence-based
+            therapeutic techniques such as Cognitive Behavioral Therapy (CBT) to help patients
+            achieve emotional well-being.
+          </p>
+        </div>
+
+        <!-- Terms -->
+        <div>
+          <h5 class="section-title">Terms & Conditions</h5>
+          <ul class="terms-list">
+            <li>Appointments must be booked in advance.</li>
+            <li>Cancellation should be done 24 hours prior.</li>
+            <li>Online consultations are confidential.</li>
+            <li>No emergency services provided.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="overview-details.php" class="btn btn-primary">Book Appointment</a>
+      </div>
+
+    </div>
+  </div>
+</div>
 
  
   <?php include 'includes/footer.php'; ?>

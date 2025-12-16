@@ -1,3 +1,72 @@
+   <style>
+
+      /* Sticky Tab */
+.expert-tab {
+  position: fixed;
+  right: -52px;
+  top: 50%;
+  transform: rotate(-90deg);
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Panel */
+.expert-panel {
+  position: fixed;
+  right: -360px;
+  top: 0;
+  width: 360px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -10px 0 30px rgba(0,0,0,.15);
+  transition: 0.4s;
+  z-index: 10000;
+}
+
+.expert-panel.open {
+  right: 0;
+}
+
+/* Header */
+.expert-header {
+  background: #ffb800;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Body */
+.expert-body {
+  padding: 20px;
+}
+
+.expert-body input,
+.expert-body select,
+.expert-body textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.expert-body button {
+    width: 100%;
+    background: #ffb800;
+    color: #000000;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+   </style>
    <!-- Start Header Area -->
     <header class="header-area">
         <div class="top__bar d-none d-lg-block">
@@ -5,8 +74,8 @@
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
                         <div class="top__bar-left">
-                            <a href="tel:+916200479520"> <i class="bx bxs-phone-call"></i> +91 6200479520 </a>
-                            <a href="mailto:info@fsmc.com"> <i class="bx bxs-envelope"></i>imhrcindia@gmail.com </a>
+                            <a href="tel:+915223190284"> <i class="bx bxs-phone-call"></i>+915223190284</a>
+                            <a href="mailto:imhrcindia@gmail.com"> <i class="bx bxs-envelope"></i>imhrcindia@gmail.com </a>
                         </div>
                     </div>
                     <div class="col-xl-9 col-md-6">
@@ -109,19 +178,19 @@
                                         <i class="bx bx-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="clinical-&-diagnostic-services.php" class="nav-link">Adult CTVS
+                                        <li class="nav-item"><a href="adult-CTVS.php" class="nav-link">Adult CTVS
                                                 (Cardiothoracic and Vascular Surgery)</a></li>
-                                        <li class="nav-item"><a href="clinical-&-diagnostic-services.php" class="nav-link">Anaesthesia</a>
+                                        <li class="nav-item"><a href="#" class="nav-link">Anaesthesia</a>
                                         </li>
-                                        <li class="nav-item"><a href="clinical-&-diagnostic-services.php" class="nav-link">Art Therapy</a>
+                                        <li class="nav-item"><a href="#" class="nav-link">Art Therapy</a>
                                         </li>
-                                        <li class="nav-item"><a href="clinical-&-diagnostic-services.php"
+                                        <li class="nav-item"><a href="#"
                                                 class="nav-link">Breast and Endocrine Surgery</a></li>
-                                        <li class="nav-item"><a href="clinical-&-diagnostic-services.php" class="nav-link">Cardiac
+                                        <li class="nav-item"><a href="#" class="nav-link">Cardiac
                                                 Sciences</a></li>
                                         <li class="nav-item"><a href="clinical-&-diagnostic-services.php"
                                                 class="nav-link">Counselling Psychology</a></li>
-                                        <li class="nav-item"><a href="clinical-&-diagnostic-services.php" class="nav-link">Critical
+                                        <li class="nav-item"><a href="#" class="nav-link">Critical
                                                 Care</a></li>
                                     </ul>
                                 </li>

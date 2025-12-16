@@ -167,50 +167,7 @@
 <section class="academic-section">
   <div class="container">
 
-    <div class="program-grid">
-
-      <!-- Certificate & Online -->
-      <a href="certificate-&-online-programs.php" class="program-card purple">
-        <img src="assets/icons/reward.png" class="program-icon" alt="">
-        <h4>Certificate & Online Programs</h4>
-        <p>
-          Short-term certificate and online programs designed to enhance skills,
-          professional knowledge, and career readiness through flexible learning.
-        </p>
-      </a>
-
-      <!-- Diploma -->
-      <a href="diploma-programs.php" class="program-card blue">
-        <img src="assets/icons/study-program.png" class="program-icon" alt="">
-        <h4>Diploma Programs</h4>
-        <p>
-          Industry-focused diploma programs that provide practical exposure,
-          hands-on training, and job-oriented learning for students and professionals.
-        </p>
-      </a>
-
-      <!-- Undergraduate -->
-      <a href="undergraduate-programs.php" class="program-card green">
-        <img src="assets/icons/undergraduate.png" class="program-icon" alt="">
-        <h4>Undergraduate Programs</h4>
-        <p>
-          Comprehensive undergraduate degree programs offering strong academic
-          foundations, skill development, and career-driven education pathways.
-        </p>
-      </a>
-
-      <!-- PG Diploma -->
-      <a href="postgraduate-diploma.php" class="program-card orange">
-        <img src="assets/icons/student.png" class="program-icon" alt="">
-        <h4>Postgraduate Diploma</h4>
-        <p>
-          Advanced postgraduate diploma programs aimed at specialization,
-          leadership development, and professional advancement.
-        </p>
-      </a>
-
-    </div>
-
+   
     <!-- OTHER ACADEMIC -->
     <h2 class="other-title py-4">Other Academic Offerings</h2>
 

@@ -81,6 +81,28 @@
     /* padding: 10px 20px; */
     width: 100%;
 }
+.slot-btn{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  background:#f8f9fa;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.slot-btn.active{
+  background:#0d6efd;
+  color:#fff;
+  border-color:#0d6efd;
+}
+
+.slot-btn.booked{
+  background:#e9ecef;
+  color:#999;
+  cursor:not-allowed;
+}
+
     </style>
 </head>
 
@@ -105,49 +127,43 @@
 <section class="book-appt py-5">
   <div class="container">
 
-    <div class="text-center mb-5">
-      <h2 class="fw-bold display-6">Book an Appointment</h2>
-      <p class="text-muted fs-5">
-        Choose Online or Offline consultation, select date & time, and complete payment securely.
-      </p>
-    </div>
+  
 
     <div class="row justify-content-center">
       <div class="col-lg-8">
 
         <div class="appointment-card p-5 bg-white shadow-lg rounded-4">
 
-          <!-- MODE TOGGLE -->
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <h5 class="fw-bold mb-0">Consultation Mode</h5>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="modeSwitch">
-              <label class="form-check-label fw-bold" id="modeLabel">Online</label>
-            </div>
-          </div>
-
-       <form>
+<form>
 
   <!-- MODE -->
-  <input type="hidden" name="consultation_mode" id="consultationMode" value="online">
+  <div class="mb-3">
+    <label class="form-label fw-bold">Consultation Mode</label>
+    <select class="form-control form-control-lg" id="modeSelect" name="consultation_mode">
+      <option value="online">Online</option>
+      <option value="offline">Offline</option>
+    </select>
+  </div>
 
   <!-- BASIC INFO -->
   <div class="row g-3">
     <div class="col-md-6">
       <label class="form-label fw-bold">Full Name</label>
-      <input type="text" name="name" class="form-control form-control-lg" required>
+      <input type="text" name="name" class="form-control form-control-lg"
+             placeholder="Enter patient full name" required>
     </div>
 
     <div class="col-md-6">
       <label class="form-label fw-bold">Mobile Number</label>
-      <input type="tel" name="mobile" class="form-control form-control-lg" required>
+      <input type="tel" name="mobile" class="form-control form-control-lg"
+             placeholder="Enter mobile number" required>
     </div>
   </div>
 
   <!-- SERVICE -->
   <div class="mt-3">
     <label class="form-label fw-bold">Select Service</label>
-    <select class="form-control form-control-lg" id="serviceSelect" name="service" required>
+    <select class="form-control form-control-lg" id="serviceSelect" required>
       <option value="">-- Select Service --</option>
       <option value="1000">Early Intervention – ₹1000</option>
       <option value="1200">Speech Therapy – ₹1200</option>
@@ -157,90 +173,132 @@
     </select>
   </div>
 
-  <!-- DATE & TIME -->
-  <div class="row g-3 mt-1">
-    <div class="col-md-6">
-      <label class="form-label fw-bold">Select Date</label>
-      <input type="date" name="date" class="form-control form-control-lg" required>
+  <!-- DATE -->
+  <div class="mt-3">
+    <label class="form-label fw-bold">Select Date</label>
+    <input type="date" id="dateInput" class="form-control form-control-lg" required>
+  </div>
+
+  <!-- TIME SLOTS -->
+  <div class="mt-4">
+    <div class="d-flex justify-content-between mb-2">
+      <strong>Select Time Slot</strong>
+      <span>Selected: <b id="selectedSlot">—</b></span>
     </div>
 
-    <div class="col-md-6">
-      <label class="form-label fw-bold">Select Time Slot</label>
-      <select class="form-control form-control-lg" name="time_slot" required>
-        <option value="">Select Slot</option>
-        <option>10:00 AM – 11:00 AM</option>
-        <option>11:30 AM – 12:30 PM</option>
-        <option>02:00 PM – 03:00 PM</option>
-        <option>04:00 PM – 05:00 PM</option>
-      </select>
-    </div>
+    <div class="row g-2" id="slotsGrid"></div>
+    <input type="hidden" name="time_slot" id="slotInput">
   </div>
 
   <!-- ONLINE INFO -->
-  <div id="onlineBox" class="info-box mt-4">
-    <i class="bx bx-video"></i>
-    <p><b>Online Session:</b> Meeting link will be shared after payment.</p>
+  <div id="onlineBox" class="alert alert-info mt-4">
+    <i class="bi bi-camera-video"></i>
+    Online session via Zoom / Google Meet. Link shared after payment.
   </div>
 
   <!-- OFFLINE INFO -->
-  <div id="offlineBox" class="info-box mt-4 d-none">
-    <i class="bx bx-map"></i>
-    <p>
-      <b>Offline Visit:</b> Sanseeb Health Center, Delhi<br>
-      Please arrive 10 minutes early.
-    </p>
+  <div id="offlineBox" class="alert alert-warning mt-4 d-none">
+    <i class="bi bi-geo-alt"></i>
+    Offline visit at <b>Sanseeb Health Center, Delhi</b>. Please arrive early.
   </div>
 
   <!-- FEE -->
-  <div class="fee-box mt-4 d-flex justify-content-between align-items-center">
+  <div class="d-flex justify-content-between align-items-center mt-4">
     <span class="fw-bold fs-5">Total Payable</span>
     <span class="fw-bold fs-4 text-primary" id="feeText">₹0</span>
   </div>
 
-  <button type="submit" class="btn btn-appt w-100 py-3 rounded-pill mt-4">
+  <button class="btn btn-primary w-100 py-3 rounded-pill mt-4">
     Proceed to Pay
   </button>
 
 </form>
-
 
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <script>
-  const modeSwitch = document.getElementById("modeSwitch");
-  const modeLabel = document.getElementById("modeLabel");
-  const onlineBox = document.getElementById("onlineBox");
-  const offlineBox = document.getElementById("offlineBox");
-  const consultationMode = document.getElementById("consultationMode");
+// DATE FIX (NO PAST DATE)
+const dateInput = document.getElementById("dateInput");
+const today = new Date();
+const yyyy = today.getFullYear();
+const mm = String(today.getMonth()+1).padStart(2,'0');
+const dd = String(today.getDate()).padStart(2,'0');
+const todayStr = `${yyyy}-${mm}-${dd}`;
+dateInput.min = todayStr;
+dateInput.value = todayStr;
 
-  // Default = Online
-  modeSwitch.checked = true;
-  modeLabel.innerText = "Online";
 
-  modeSwitch.addEventListener("change", function () {
-    if (this.checked) {
-      modeLabel.innerText = "Online";
-      onlineBox.classList.remove("d-none");
-      offlineBox.classList.add("d-none");
-      consultationMode.value = "online";
-    } else {
-      modeLabel.innerText = "Offline";
-      offlineBox.classList.remove("d-none");
-      onlineBox.classList.add("d-none");
-      consultationMode.value = "offline";
+// MODE CHANGE
+const modeSelect = document.getElementById("modeSelect");
+const onlineBox = document.getElementById("onlineBox");
+const offlineBox = document.getElementById("offlineBox");
+
+modeSelect.onchange = () => {
+  if(modeSelect.value === "online"){
+    onlineBox.classList.remove("d-none");
+    offlineBox.classList.add("d-none");
+  }else{
+    offlineBox.classList.remove("d-none");
+    onlineBox.classList.add("d-none");
+  }
+};
+
+
+// PRICE
+const serviceSelect = document.getElementById("serviceSelect");
+const feeText = document.getElementById("feeText");
+
+serviceSelect.onchange = () => {
+  feeText.innerText = serviceSelect.value ? "₹"+serviceSelect.value : "₹0";
+};
+
+
+// SLOTS
+const slots = ['10:00 AM','11:30 AM','02:00 PM','04:00 PM'];
+const booked = ['11:30 AM'];
+
+const slotsGrid = document.getElementById("slotsGrid");
+const selectedSlot = document.getElementById("selectedSlot");
+const slotInput = document.getElementById("slotInput");
+
+function loadSlots(){
+  slotsGrid.innerHTML='';
+  selectedSlot.innerText='—';
+  slotInput.value='';
+
+  slots.forEach(t=>{
+    const col=document.createElement('div');
+    col.className='col-6 col-md-3';
+
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='slot-btn';
+
+    if(booked.includes(t)){
+      btn.classList.add('booked');
+      btn.disabled=true;
+      btn.innerText=t;
+    }else{
+      btn.innerText=t;
+      btn.onclick=()=>{
+        document.querySelectorAll('.slot-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedSlot.innerText=t;
+        slotInput.value=t;
+      };
     }
-  });
 
-  // PRICE CHANGE
-  const serviceSelect = document.getElementById("serviceSelect");
-  const feeText = document.getElementById("feeText");
-
-  serviceSelect.addEventListener("change", function () {
-    feeText.innerText = this.value ? "₹" + this.value : "₹0";
+    col.appendChild(btn);
+    slotsGrid.appendChild(col);
   });
+}
+
+loadSlots();
+dateInput.onchange = loadSlots;
 </script>
 
 

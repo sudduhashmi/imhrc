@@ -110,7 +110,7 @@
 
 .service-card-uniq{
   text-decoration:none;
-  background:linear-gradient(180deg,#ffffff,#f5f8ff);
+    background: linear-gradient(180deg, #ffffff, #ffffff);
   border-radius:22px;
   padding:34px 24px 30px;
   position:relative;
@@ -139,19 +139,19 @@
   margin:auto;
   margin-bottom:16px;
   border-radius:22px;
-  background:#eef2ff;
+  background:#ffffff;
   display:flex;
   align-items:center;
   justify-content:center;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 }
 
 .icon-box img{
-  width:32px;
+  width:50px;
 }
 
 .service-card-uniq h4{
-  font-size:15px;
+  font-size:20px;
   font-weight:600;
   line-height:1.4;
 }
@@ -225,33 +225,33 @@ h2.service-heading {
 
   <div class="services-grid unique-cards">
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/aptitude.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Aptitude Tests</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/intelligence.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Intelligence Tests</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/personality.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Personality Tests</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/iq.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Psychometric (IQ) Tests</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/education.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Educational Tests</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/adaptive.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Adaptive Tests</h4>
     </a>
 
@@ -263,33 +263,33 @@ h2.service-heading {
 
   <div class="services-grid unique-cards">
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/intellectual.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Intellectual Disability</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/learning.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Learning Disability</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/autism.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Autism / ADHD</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/cerebral.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Cerebral Palsy</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/scholastic.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Scholastic Problems</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/career.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Career Mapping &amp; Counselling</h4>
     </a>
 
@@ -301,73 +301,73 @@ h2.service-heading {
 
   <div class="services-grid unique-cards">
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/behaviour.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Behaviour Therapy</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/modification.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Behaviour Modification Therapy</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/special-education.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Special Education</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/aba.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Applied Behaviour Analysis (ABA)</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/speech.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Speech Therapy</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/communication.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Language &amp; Communication</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/aac.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Alternative Augmentative Communication</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/occupational.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Occupational Therapy</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/sensory.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Sensory Integration Therapy</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/physio.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Physiotherapy</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/parent.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Parent Empowerment</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/mobility.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Orientation &amp; Mobility</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/posture.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Sitting &amp; Posture Control</h4>
     </a>
 
-    <a href="expert.php" class="service-card-uniq">
-      <div class="icon-box"><img src="assets/icons/assistive.svg"></div>
+    <a href="services-details.php" class="service-card-uniq">
+      <div class="icon-box"><img src="assets/icons/adaptability.png"></div>
       <h4>Assistive Devices</h4>
     </a>
 
