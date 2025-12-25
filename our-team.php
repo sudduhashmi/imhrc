@@ -47,7 +47,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2> Our Team</h2>
-    <p class="inde">Home › Our Team</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -59,15 +58,6 @@
 </div>
 <section class="hausla-team py-5 ">
   <div class="container">
-
-    <!-- Title -->
-    <div class="text-center mb-5">
-      <h2 class="fw-bold display-6">Meet Our Experts</h2>
-      <p class="text-muted fs-5">
-        A multidisciplinary team of certified professionals dedicated to assessment, therapy, and holistic rehabilitation.
-      </p>
-    </div>
-
     <div class="row g-4">
 
       <!-- Team Member 1 -->
@@ -78,8 +68,6 @@
           <h4 class="fw-bold mb-1">Dr. Riya Sharma</h4>
           <h6 class="text-primary mb-2">Clinical Psychologist</h6>
 
-          <p class="text-muted mb-1"><strong>Qualification:</strong> M.Phil (Clinical Psychology)</p>
-          <p class="text-muted mb-3"><strong>Experience:</strong> 7+ Years</p>
 
         </div>
       </div>
@@ -92,9 +80,6 @@
           <h4 class="fw-bold mb-1">Amit Verma</h4>
           <h6 class="text-success mb-2">Occupational Therapist</h6>
 
-          <p class="text-muted mb-1"><strong>Qualification:</strong> BOT (Bachelor of Occupational Therapy)</p>
-          <p class="text-muted mb-3"><strong>Experience:</strong> 5+ Years</p>
-
         </div>
       </div>
 
@@ -105,9 +90,6 @@
 
           <h4 class="fw-bold mb-1">Neha Singh</h4>
           <h6 class="text-danger mb-2">Speech Therapist</h6>
-
-          <p class="text-muted mb-1"><strong>Qualification:</strong> BASLP (Speech & Hearing)</p>
-          <p class="text-muted mb-3"><strong>Experience:</strong> 6+ Years</p>
 
         </div>
       </div>

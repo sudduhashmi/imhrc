@@ -1004,40 +1004,58 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
                 <div class="feature-track">
 
                     <div class="feature-box">
-                        <img src="assets/img/affiliation1.png" alt="">
+                        <img src="assets/img/our-affiliations/1.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation2.png" alt="">
+                        <img src="assets/img/our-affiliations/2.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation3.png" alt="">
+                        <img src="assets/img/our-affiliations/3.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation4.png" alt="">
+                        <img src="assets/img/our-affiliations/4.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation5.png" alt="">
+                        <img src="assets/img/our-affiliations/5.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation6.png" alt="">
+                        <img src="assets/img/our-affiliations/6.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation7.png" alt="">
+                        <img src="assets/img/our-affiliations/7.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation8.png" alt="">
+                        <img src="assets/img/our-affiliations/8.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation9.png" alt="">
+                        <img src="assets/img/our-affiliations/9.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation10.png" alt="">
+                        <img src="assets/img/our-affiliations/10.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation11.png" alt="">
+                        <img src="assets/img/our-affiliations/11.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation12.png" alt="">
+                        <img src="assets/img/our-affiliations/12.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/13.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/14.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/15.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/16.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/17.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/18.jpg" alt="">
                     </div> 
                 </div>
             </div>

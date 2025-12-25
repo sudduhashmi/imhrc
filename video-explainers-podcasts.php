@@ -47,7 +47,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2> Video Explainers & Podcasts</h2>
-    <p class="inde">Watch our expert-led video explanations or listen to engaging podcasts on mental health and psychology topics.</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -61,39 +60,78 @@
 <!-- VIDEO EXPLAINERS & PODCASTS -->
 <div class="container" style="margin-bottom:50px;">
 
+  <div class="video-podcast-grid"
+       style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
 
-  <div class="video-podcast-grid" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+    <!-- VIDEO CARD 1 -->
+    <div class="video-card"
+         style="background:#fff; border-radius:10px; overflow:hidden; width:300px;
+                box-shadow:0 4px 10px rgba(0,0,0,0.1);">
 
-    <div class="video-card" onclick="openVideo('video1.html')" style="background:#fff; border-radius:10px; overflow:hidden; width:300px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-      <img src="https://images.unsplash.com/photo-1581090700227-7f56d0ec3794" style="width:100%; height:180px; object-fit:cover;">
+      <iframe
+        width="100%"
+        height="180"
+        src="https://www.youtube.com/embed/rsfDY-iEahc"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
       <div class="content" style="padding:20px;">
         <h4>Understanding Anxiety Through Video</h4>
-        <div class="meta" style="font-size:0.85rem; color:#777; margin-bottom:10px;">Video · 8 min</div>
-        <a href="#">Watch →</a>
+        <div class="meta" style="font-size:0.85rem; color:#777;">
+          Video · 8 min
+        </div>
       </div>
     </div>
 
-    <div class="video-card" onclick="openVideo('podcast1.html')" style="background:#fff; border-radius:10px; overflow:hidden; width:300px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-      <img src="https://images.unsplash.com/photo-1581093588401-3f9c3d67b3b0" style="width:100%; height:180px; object-fit:cover;">
+    <!-- VIDEO CARD 2 -->
+    <div class="video-card"
+         style="background:#fff; border-radius:10px; overflow:hidden; width:300px;
+                box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+
+      <iframe
+        width="100%"
+        height="180"
+        src="https://www.youtube.com/embed/rsfDY-iEahc"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
       <div class="content" style="padding:20px;">
         <h4>Mindfulness Podcast Episode 1</h4>
-        <div class="meta" style="font-size:0.85rem; color:#777; margin-bottom:10px;">Podcast · 15 min</div>
-        <a href="#">Listen →</a>
+        <div class="meta" style="font-size:0.85rem; color:#777;">
+          Podcast · 15 min
+        </div>
       </div>
     </div>
 
-    <div class="video-card" onclick="openVideo('video2.html')" style="background:#fff; border-radius:10px; overflow:hidden; width:300px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" style="width:100%; height:180px; object-fit:cover;">
+    <!-- VIDEO CARD 3 -->
+    <div class="video-card"
+         style="background:#fff; border-radius:10px; overflow:hidden; width:300px;
+                box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+
+      <iframe
+        width="100%"
+        height="180"
+        src="https://www.youtube.com/embed/rsfDY-iEahc"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
       <div class="content" style="padding:20px;">
         <h4>Trauma & Recovery Video Session</h4>
-        <div class="meta" style="font-size:0.85rem; color:#777; margin-bottom:10px;">Video · 12 min</div>
-        <a href="#">Watch →</a>
+        <div class="meta" style="font-size:0.85rem; color:#777;">
+          Video · 12 min
+        </div>
       </div>
     </div>
 
   </div>
-
 </div>
+
 
 <script>
   function openVideo(url){

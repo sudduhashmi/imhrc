@@ -239,7 +239,7 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Articles & Blogs</h2>
-    <p>Trending insights on mental health, psychology research, student well-being, <br> clinical practice, and community mental health awareness.</p>
+   
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">

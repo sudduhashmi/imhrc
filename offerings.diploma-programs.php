@@ -46,13 +46,7 @@
       --card-radius:14px;
     }
 
-    body{
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:var(--brand);
-      background: #ffffff;
-      line-height:1.5;
-    }
-
+   
     /* HERO */
     .hero{
       /* background:linear-gradient(120deg,var(--brand),#123f76); */
@@ -177,7 +171,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Offerings Diploma Programs</h2>
-    <p class="inde">Home › Offerings Diploma Programs</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -205,11 +198,9 @@
           certification to advance their careers in clinical, counselling, and mental health roles.
         </p>
 
-        <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#enrollModal">
+        <a href="admission-form.php" class="btn btn-light btn-lg">
           Enroll Now
-        </button>
-
-        <a href="#programs" class="btn btn-outline-light btn-lg">View Programs</a>
+       </a>
       </div>
 
       <div class="col-lg-4 text-center">
@@ -248,7 +239,7 @@ health roles.
 <li><i class="bi bi-check2-circle me-2"></i> Career mentoring & certification</li>
 </ul>
 
-<a class="btn btn-enroll w-100 mt-3" data-bs-toggle="modal" data-bs-target="#enrollModal">
+<a href="admission-form.php" class="btn btn-enroll w-100 mt-3">
 Apply for Diploma
 </a>
 
@@ -447,7 +438,7 @@ box.innerHTML+=`
 <strong>Fees: ${p.fee}</strong>
 <div class="prog-footer mt-3">
 <button class="btn btn-sm btn-outline-secondary" onclick="openDetails(${p.id})">Overview</button>
-<button class="btn btn-enroll ms-auto" onclick="quickEnroll(${p.id})">Enroll</button>
+<a href="admission-form.php" class="btn btn-enroll ms-auto">Enroll</a>
 </div>
 </div>
 </div>`;

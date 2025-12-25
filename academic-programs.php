@@ -142,7 +142,11 @@
 .orange .program-icon {
   filter: none;
 }
-
+.nihe-logo {
+    height: 120px;
+    width: auto;
+    border-radius: 5%;
+}
     </style>
 </head>
 
@@ -152,9 +156,13 @@
    <?php include 'includes/header.php'; ?>
    	<!-- Start Page Title Area -->
 <div class="page-title-wave">
-  <div class="container">
-    <h2>Academic Programs</h2>
+<div class="container">
+  <div class="align-items-center gap-3">
+    <img src="assets/img/our-affiliations/13.jpg" alt="NIHE Logo" class="nihe-logo mb-2">
+    <h2 class="mb-0">National Institute of Higher Education</h2>
   </div>
+</div>
+
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
     <path fill="#ffffff" fill-opacity="1" 
@@ -167,9 +175,6 @@
 <section class="academic-section">
   <div class="container">
 
-   
-    <!-- OTHER ACADEMIC -->
-    <h2 class="other-title py-4">Other Academic Offerings</h2>
 
     <div class="program-grid">
 

@@ -40,17 +40,14 @@
 <style>
 .publication-card {
   background: #fff;
-  padding: 30px;
+  padding: 18px;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 .modal-backdrop.show {
     opacity: 0;
 }
-.book-img {
-  max-height: 260px;
-  border-radius: 10px;
-}
+
 
 .custom-modal {
   border-radius: 20px;
@@ -73,7 +70,7 @@
 
 .img-wrap {
   background: #f5f7fa;
-  padding: 25px;
+  /* padding: 25px; */
   text-align: center;
 }
 
@@ -83,9 +80,7 @@
   object-fit: contain;
 }
 
-.card-body {
-  padding: 22px;
-}
+
 
 .card-body h5 {
   font-size: 17px;
@@ -109,8 +104,8 @@
 .section-badge {
   display: inline-block;
   padding: 6px 16px;
-  background: #e8f5e9;
-  color: #198754;
+  background: #1d274b30;
+  color: #1d274b;
   font-weight: 600;
   border-radius: 50px;
   font-size: 14px;
@@ -169,9 +164,7 @@
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-max-width: 299px;
-  text-align: center;
-  padding: 20px;
+  padding: 0px;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -185,10 +178,11 @@ max-width: 299px;
 .book-img {
   position: relative;
 }
-
+.book-body {
+    padding: 0px 20px 20px;
+}
 .book-img img {
     width: 100%;
-    border-radius: 12px;
     margin-bottom: 15px;
     height: 200px;
     object-fit: cover;
@@ -272,6 +266,147 @@ max-width: 299px;
     padding: 20px;
 }
 </style>
+<style>
+  .published-books{
+  background:#f8f9fa;
+}
+.intro h2 span{
+  color:#ffb800;
+}
+
+.book-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  transition:.4s;
+  height:100%;
+}
+.book-card:hover{
+  transform:translateY(-8px);
+}
+
+.book-img{
+  position:relative;
+}
+.book-img img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+.book-badge{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:#ffb800;
+  color:#fff;
+  padding:4px 12px;
+  font-size:12px;
+  border-radius:20px;
+}
+.book-badge.new{
+  background:#198754;
+}
+
+
+.book-body h5{
+  font-weight:700;
+}
+.author{
+  font-size:14px;
+  color:#777;
+}
+
+.book-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  font-size:13px;
+  color:#555;
+  margin:10px 0;
+}
+.book-meta i{
+  color:#ffb800;
+  margin-right:4px;
+}
+
+.price{
+  font-size:18px;
+  font-weight:700;
+  color:#ffb800;
+  margin-bottom:12px;
+}
+
+.buy-btn{
+  display:block;
+  text-align:center;
+  background:#ffb800;
+  color:#000;
+  padding:10px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+}
+.buy-btn:hover{
+  background:#0a0f23;
+  color:#fff;
+}
+
+/* CTA Button Section */
+.publish-book-cta {
+  padding: 80px 20px;
+    background: linear-gradient(135deg, #1d274b, #1d274b);
+  color: #fff;
+  text-align: center;
+}
+section.publish-book-cta h2 {
+    color: #ffce00;
+}
+.btn-large { padding: 16px 40px; background: #ffce00; color: #333; border-radius: 50px; font-size: 1.1rem; font-weight: 600; border: none; cursor: pointer; transition: 0.3s; }
+.btn-large:hover { background: #ffb800; transform: translateY(-3px); }
+
+/* Modal Styles */
+
+.close-btn { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; }
+
+/* Form Styles */
+form fieldset { border: 1px solid #ddd; padding: 15px 20px; margin-bottom: 20px; border-radius: 10px; }
+form legend { font-weight: bold; margin-bottom: 10px; }
+form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
+form textarea { resize: vertical; }
+form button { width: 100%; margin-top: 10px; }
+
+/* Responsive */
+@media(max-width: 768px){ .modal-content { margin: 10% 10px; padding: 20px; } }
+.model-section{
+  max-width:520px;
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+}
+#publishForm input,
+#publishForm textarea{
+  width:100%;
+  padding:12px 14px;
+  margin-bottom:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+#publishForm textarea{
+  min-height:90px;
+  resize:none;
+}
+.file-label{
+  display:block;
+  margin-bottom:15px;
+  font-size:14px;
+}
+.agree{
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+</style>
 </head>
 
 <body>
@@ -281,8 +416,7 @@ max-width: 299px;
    	<!-- Start Page Title Area -->
 <div class="page-title-wave">
   <div class="container">
-    <h2>Research & publications</h2>
-    <p class="inde">Home › Research & publications</p>
+    <h2>Research & Publications</h2>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -298,17 +432,9 @@ max-width: 299px;
 <div class="container mb-4">
   <div class="row">
     <div class="col-12 text-center">
-
-      <span class="section-badge">IMHRC Publications</span>
-
-      <h2 class="section-title mt-2">
-        Research Journals & Book Publications
-      </h2>
-
-      <div class="section-divider"></div>
-
+      <span class="section-badge">IMHRC Journals</span>
       <p class="section-subtitle">
-        Explore peer-reviewed journals, research publications, and academic books
+        Explore peer-reviewed journals, research publications,  
         published by IMHRC and associated scholars across Science, Social Sciences,
         and Humanities.
       </p>
@@ -316,12 +442,11 @@ max-width: 299px;
     </div>
   </div>
 </div>
-
 <div class="container py-5">
   <div class="row g-4">
 
     <!-- Card 1 -->
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-8 col-md-6 m-auto">
       <div class="publication-card">
         <div class="img-wrap">
           <img src="assets/img/publication_image_1.png" alt="Book">
@@ -341,12 +466,23 @@ max-width: 299px;
               View Details
             </button>
 
-            <a href="#" class="btn btn-success btn-sm">
-              Buy Now
+           <a href="https://www.jarssc.com/" class="btn btn-success btn-sm">
+              Public Your Artical
             </a>
           </div>
         </div>
       </div>
+    </div>
+
+   
+
+  </div>
+</div>
+<div class="container py-5">
+  <div class="row g-4">
+
+   <div class="intro text-center mb-5">
+      <h2>Publish <span>Sychological </span>Tools</h2>
     </div>
 
     <!-- Card 2 -->
@@ -397,7 +533,7 @@ max-width: 299px;
               View Details
             </button>
 
-            <a href="#" class="btn btn-success btn-sm">
+           <a href="#" class="btn btn-success btn-sm">
               Buy Now
             </a>
           </div>
@@ -408,6 +544,15 @@ max-width: 299px;
   </div>
 </div>
 
+<section class="publish-book-cta">
+  <div class="container text-center">
+    <h2>Become an Author</h2>
+    <p>Start your journey to publish your book today with our professional support.</p>
+    <button class="btn btn-large" id="openFormBtn">Publish Sychological Tools Now</button>
+     <!-- <a href="guidelines.pdf" class="btn btn-large" target="_blank">Guidelines for Book Proposal -->
+</a>
+  </div>
+</section>
 
 <div class="modal fade" id="publicationModal" tabindex="-1">
   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
@@ -423,7 +568,6 @@ max-width: 299px;
           <!-- LEFT IMAGE -->
           <div class="col-lg-4 text-center">
             <img src="assets/img/publication_image_1.png" class="img-fluid shadow rounded" alt="Book">
-            <button class="btn btn-success w-100 mt-3">Buy This Book</button>
           </div>
 
           <!-- RIGHT CONTENT -->
@@ -498,79 +642,121 @@ max-width: 299px;
 </div>
 
 
-<section class="published-books">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<section class="published-books py-5">
   <div class="container">
 
-    <!-- Section Title & Subtitle -->
-    <div class="intro text-center">
-      <h2>Published Books</h2>
-      <p>Browse our collection of books and get your copy today!</p>
+    <div class="intro text-center mb-5">
+      <h2>Published <span>Books</span></h2>
+      <p>Explore our professionally published books</p>
     </div>
 
-    <!-- Books Grid -->
-    <div class="books-grid">
+    <div class="row g-4">
 
-      <!-- Book Card 1 -->
-      <div class="book-card">
-        <div class="book-img">
-          <img src="assets/img/publication_image_1.png" alt="Book 1">
-          <span class="badge">Bestseller</span>
+      <!-- Book 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="book-card">
+          <div class="book-img">
+            <img src="assets/img/publication_image_1.png">
+            <span class="book-badge">Bestseller</span>
+          </div>
+          <div class="book-body">
+            <h5>Mind & Wellness</h5>
+            <p class="author">Dr. A. Sharma</p>
+
+            <div class="book-meta">
+              <span><i class="bi bi-file-text"></i> 220 Pages</span>
+              <span><i class="bi bi-book"></i> Paperback</span>
+              <span><i class="bi bi-star-fill"></i> 4.8</span>
+            </div>
+
+            <div class="price">₹499</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+          </div>
         </div>
-        <h3 class="book-title">Book Title One</h3>
-        <p class="book-author">by Author One</p>
-        <p class="book-desc">A short description about this book that attracts readers.</p>
-        <p class="book-price">₹19.99</p>
-        <a href="#" class="btn">Buy Now</a>
       </div>
 
-      <!-- Book Card 2 -->
-      <div class="book-card">
-        <div class="book-img">
-          <img src="assets/img/publication_image_1.png" alt="Book 2">
-          <span class="badge new">New Release</span>
+      <!-- Book 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="book-card">
+          <div class="book-img">
+            <img src="assets/img/publication_image_1.png">
+            <span class="book-badge new">New</span>
+          </div>
+          <div class="book-body">
+            <h5>Modern Psychology</h5>
+            <p class="author">S. Verma</p>
+
+            <div class="book-meta">
+              <span><i class="bi bi-file-text"></i> 180 Pages</span>
+              <span><i class="bi bi-tablet"></i> eBook</span>
+              <span><i class="bi bi-star-fill"></i> 4.6</span>
+            </div>
+
+            <div class="price">₹349</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+          </div>
         </div>
-        <h3 class="book-title">Book Title Two</h3>
-        <p class="book-author">by Author Two</p>
-        <p class="book-desc">An engaging story or content description goes here.</p>
-        <p class="book-price">₹24.99</p>
-        <a href="#" class="btn">Buy Now</a>
       </div>
 
-      <!-- Book Card 3 -->
-      <div class="book-card">
-        <div class="book-img">
-          <img src="assets/img/publication_image_1.png" alt="Book 3">
+      <!-- Book 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="book-card">
+          <div class="book-img">
+            <img src="assets/img/publication_image_1.png">
+          </div>
+          <div class="book-body">
+            <h5>Youth Leadership</h5>
+            <p class="author">R. Khan</p>
+
+            <div class="book-meta">
+              <span><i class="bi bi-file-text"></i> 260 Pages</span>
+              <span><i class="bi bi-book"></i> Hardcover</span>
+              <span><i class="bi bi-star-fill"></i> 4.7</span>
+            </div>
+
+            <div class="price">₹699</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+          </div>
         </div>
-        <h3 class="book-title">Book Title Three</h3>
-        <p class="book-author">by Author Three</p>
-        <p class="book-desc">Brief description to give readers an idea about this book.</p>
-        <p class="book-price">₹14.99</p>
-        <a href="#" class="btn">Buy Now</a>
       </div>
 
-      <!-- Book Card 4 -->
-      <div class="book-card">
-        <div class="book-img">
-          <img src="assets/img/publication_image_1.png" alt="Book 4">
+      <!-- Book 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="book-card">
+          <div class="book-img">
+            <img src="assets/img/publication_image_1.png">
+          </div>
+          <div class="book-body">
+            <h5>Health for All</h5>
+            <p class="author">Team Sanseeb</p>
+
+            <div class="book-meta">
+              <span><i class="bi bi-file-text"></i> 200 Pages</span>
+              <span><i class="bi bi-book"></i> Paperback</span>
+              <span><i class="bi bi-star-fill"></i> 4.5</span>
+            </div>
+
+            <div class="price">₹399</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+          </div>
         </div>
-        <h3 class="book-title">Book Title Four</h3>
-        <p class="book-author">by Author Four</p>
-        <p class="book-desc">Short, catchy description to entice potential readers.</p>
-        <p class="book-price">₹29.99</p>
-        <a href="#" class="btn">Buy Now</a>
       </div>
 
     </div>
-
   </div>
 </section>
+
 
 <!-- Publish Your Book CTA -->
 <section class="publish-book-cta">
   <div class="container text-center">
-    <h2>Publish Your Book</h2>
+    <h2>Become an Author</h2>
     <p>Start your journey to publish your book today with our professional support.</p>
     <button class="btn btn-large" id="openFormBtn">Publish Now</button>
+     <a href="guidelines.pdf" class="btn btn-large" target="_blank">Guidelines for Book Proposal
+</a>
   </div>
 </section>
 
@@ -578,76 +764,42 @@ max-width: 299px;
 <div id="publishFormModal" class="modal">
   <div class="modal-content model-section">
     <span class="close-btn">&times;</span>
-    <h2>Submit Your Manuscript</h2>
+
+    <h3 class="mb-3">Submit Book Proposal</h3>
+    <p class="small text-muted mb-4">
+      Please fill the basic details. Our team will contact you.
+    </p>
+
     <form id="publishForm">
-      
-      <!-- Personal Details -->
-      <fieldset>
-        <legend>Personal Details</legend>
-        <input type="text" name="fullName" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <input type="text" name="address" placeholder="Address">
-      </fieldset>
 
-      <!-- Book Details -->
-      <fieldset>
-        <legend>Book Details</legend>
-        <input type="text" name="bookTitle" placeholder="Book Title" required>
-        <input type="text" name="genre" placeholder="Genre / Category" required>
-        <textarea name="description" placeholder="Short Description / Synopsis" required></textarea>
-        <input type="file" name="manuscript" required>
-        <input type="number" name="wordCount" placeholder="Estimated Word Count">
-      </fieldset>
+      <input type="text" name="fullName" placeholder="Full Name*" required>
+      <input type="email" name="email" placeholder="Email Address*" required>
+      <input type="tel" name="phone" placeholder="Phone Number*" required>
 
-      <!-- Author Bio -->
-      <fieldset>
-        <legend>Author Bio</legend>
-        <textarea name="bio" placeholder="Short Biography" required></textarea>
-        <textarea name="previousWorks" placeholder="Previous Works (if any)"></textarea>
-      </fieldset>
+      <input type="text" name="bookTitle" placeholder="Book Title*" required>
+      <input type="text" name="genre" placeholder="Genre / Category">
 
-      <!-- Agreement -->
-      <fieldset>
-        <label>
-          <input type="checkbox" name="agreement" required> I agree to the terms & conditions
-        </label>
-      </fieldset>
+      <textarea name="description" placeholder="Short Book Description*" required></textarea>
 
-      <!-- Submit -->
-      <button type="submit" class="btn btn-large">Submit Manuscript</button>
+      <label class="file-label">
+        Upload Manuscript (PDF / DOC)
+        <input type="file" name="manuscript">
+      </label>
+
+      <label class="agree">
+        <input style="width: 30px;" type="checkbox" required >
+        I agree to the terms & conditions
+      </label>
+
+      <button type="submit" class="btn btn-primary w-100">
+        Submit Proposal
+      </button>
     </form>
   </div>
 </div>
 
-<style>
-/* CTA Button Section */
-.publish-book-cta {
-  padding: 80px 20px;
-    background: linear-gradient(135deg, #1d274b, #1d274b);
-  color: #fff;
-  text-align: center;
-}
-section.publish-book-cta h2 {
-    color: #ffce00;
-}
-.btn-large { padding: 16px 40px; background: #ffce00; color: #333; border-radius: 50px; font-size: 1.1rem; font-weight: 600; border: none; cursor: pointer; transition: 0.3s; }
-.btn-large:hover { background: #ffb800; transform: translateY(-3px); }
 
-/* Modal Styles */
 
-.close-btn { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; }
-
-/* Form Styles */
-form fieldset { border: 1px solid #ddd; padding: 15px 20px; margin-bottom: 20px; border-radius: 10px; }
-form legend { font-weight: bold; margin-bottom: 10px; }
-form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
-form textarea { resize: vertical; }
-form button { width: 100%; margin-top: 10px; }
-
-/* Responsive */
-@media(max-width: 768px){ .modal-content { margin: 10% 10px; padding: 20px; } }
-</style>
 
 <script>
 // Open Modal

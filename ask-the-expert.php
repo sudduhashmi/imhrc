@@ -163,7 +163,6 @@
    	<!-- Start Page Title Area -->
 <div class="page-title-wave">
   <div class="container">
-    <h2>Ask the Expert</h2>
     <p>Have questions about mental health, wellness, or psychology research? Get answers from certified experts.</p>
   </div>
 

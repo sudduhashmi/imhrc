@@ -46,12 +46,7 @@
       --card-radius:14px;
     }
 
-    body{
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:var(--brand);
-      background: #ffffff;
-      line-height:1.5;
-    }
+  
 
     /* HERO */
     .hero{
@@ -171,8 +166,7 @@
    	<!-- Start Page Title Area -->
 <div class="page-title-wave">
   <div class="container">
-    <h2>Certificate & Online Programs</h2>
-    <p class="inde">Home › Certificate & Online Programs</p>
+    <h2>Certificate Programs</h2>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -190,12 +184,11 @@
     <div class="container">
       <div class="row gx-5 align-items-center">
         <div class="col-lg-8">
-          <span class="badge-accent">Academic Programs</span>
-          <h1>Academic Programs at IMHRC — Psychology & Mental Health Education</h1>
+          <span class="badge-accent">Certificate Programs</span>
+          <h1>Certificate Programs at IMHRC — Psychology & Mental Health Education</h1>
           <p class="text-black">Explore IMHRC’s certificate, diploma, undergraduate and postgraduate programs. Industry-aligned curriculum, expert faculty, clinical exposure and recognized certifications to launch your career in mental health.</p>
           <div class="mt-3">
-            <button class="btn btn-light btn-lg me-2" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
-            <a href="#programs" class="btn btn-outline-light btn-lg">View Programs</a>
+            <a href="admission-form.php" class="btn btn-light btn-lg me-2">Enroll Now</a>
           </div>
         </div>
 
@@ -215,7 +208,7 @@
         <!-- LEFT INFO -->
         <aside class="col-lg-4">
           <div class="info-panel">
-            <h4 class="fw-bold">Why IMHRC Academic Programs</h4>
+            <h4 class="fw-bold">Why IMHRC Certificate Programs</h4>
             <p>Practical, accredited programs crafted by clinical experts. Gain hands-on experience, case-based learning and a recognized certificate to strengthen your professional profile.</p>
 
             <ul class="list-unstyled mt-3">
@@ -226,7 +219,7 @@
             </ul>
 
             <div class="mt-4">
-              <a class="btn btn-enroll w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Apply / Enroll</a>
+              <a href="admission-form.php" class="btn btn-enroll w-100" >Apply / Enroll</a>
             </div>
 
             <div class="mt-4 outline-box">
@@ -276,7 +269,7 @@
                 <div class="small text-muted">Choose a program and secure your seat with IMHRC’s structured academic pathways.</div>
               </div>
               <div>
-                <button class="btn btn-enroll" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
+                <a href="admission-form.php" class="btn btn-enroll" >Enroll Now</a>
               </div>
             </div>
           </div>
@@ -291,7 +284,7 @@
           <div class="accordion" id="faqAcc">
             <div class="accordion-item">
               <h2 class="accordion-header" id="faqOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Who can apply for IMHRC academic programs?</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Who can apply for IMHRC Certificate Programs?</button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
                 <div class="accordion-body">Students, graduates, and working professionals from psychology, social sciences and allied healthcare backgrounds can apply. Eligibility specifics are listed on each program card.</div>
@@ -323,103 +316,7 @@
     </div>
   </main>
 
-  <!-- ENROLL / APPLY MODAL -->
-  <div class="modal fade" id="enrollModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content" style="border-radius:14px;">
-        <div class="modal-header border-0">
-          <h5 class="modal-title fw-bold">Program Enrollment — Apply Now</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
 
-        <div class="modal-body">
-          <p class="text-muted small">Complete the form below to express interest. Our academic team will contact you with next steps and payment details.</p>
-
-          <form id="enrollForm">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Select Program*</label>
-                <select id="formProgram" class="form-select" required>
-                  <!-- options filled by JS -->
-                </select>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Select Mode*</label>
-                <select id="formMode" class="form-select" required>
-                  <option value="">Choose mode</option>
-                  <option value="online">Online</option>
-                  <option value="offline">Offline</option>
-                  <option value="hybrid">Hybrid</option>
-                </select>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Full Name*</label>
-                <input type="text" class="form-control" required>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Email*</label>
-                <input type="email" class="form-control" required>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Phone*</label>
-                <input type="tel" class="form-control" required>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Institute / College</label>
-                <input type="text" class="form-control">
-              </div>
-
-              <div class="col-12">
-                <label class="form-label">Message (Optional)</label>
-                <textarea class="form-control" rows="3" placeholder="Any specific questions or requests"></textarea>
-              </div>
-
-              <div class="col-12">
-                <div class="form-check">
-                  <input id="agreeEnroll" class="form-check-input" type="checkbox" required>
-                  <label class="form-check-label" for="agreeEnroll">I agree to IMHRC <a href="#terms" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Policies</a>.</label>
-                </div>
-              </div>
-
-              <div class="col-12 text-end">
-                <button class="btn btn-enroll" type="submit">Submit Application</button>
-              </div>
-            </div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- TERMS modal (short) -->
-  <div class="modal fade" id="termsModal" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Terms, Conditions & Policies</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <!-- short summary; can paste full terms if needed -->
-          <h6>Scope of Services</h6>
-          <p>Sanseeb Health & Edutech Pvt. Ltd. provides counselling, internship & academic programs via online and offline delivery. Fees, refunds and booking rules apply as per policy.</p>
-          <h6>Payments & Refund</h6>
-          <p>Fees are quoted in INR. Payments confirmed via authorized payment gateways (e.g. Razorpay). Certain fees are non-refundable; refer to detailed policy on the site.</p>
-          <h6>Privacy</h6>
-          <p>We collect and process personal data for program delivery. Data is not sold; shared only with payment processors and authorized partners when required.</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -481,7 +378,7 @@
               <button class="btn btn-link p-0" onclick="openDetails(${p.id})">Program Overview</button>
               <div class="ms-auto">
                 <button class="btn btn-sm btn-outline-secondary me-2" onclick="downloadBrochure(${p.id})"><i class="bi bi-download"></i> Brochure</button>
-                <button class="btn btn-enroll" onclick="quickEnroll(${p.id})">Enroll</button>
+                <a href="admission-form.php" class="btn btn-enroll">Enroll</a>
               </div>
             </div>
           </article>

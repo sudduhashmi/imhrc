@@ -156,7 +156,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Join Our Team</h2>
-    <p class="inde">Home › Join Our Team</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">

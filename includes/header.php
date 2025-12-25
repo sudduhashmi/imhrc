@@ -65,6 +65,20 @@
     border-radius: 30px;
     font-weight: bold;
 }
+.bxl-twitter {
+    position: relative;
+    font-size: 20px;
+}
+
+.bxl-twitter::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M18.901 1.153h3.68l-8.04 9.186L24 22.847h-7.406l-5.8-7.584-6.637 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932z'/%3E%3C/svg%3E")
+        no-repeat center;
+    background-size: contain;
+}
 
    </style>
    <!-- Start Header Area -->
@@ -87,6 +101,11 @@
                                     <li><a href="internships-&-training.php">Internships & Training</a></li>
                                     <li><a href="fellowship.php">Fellowship</a></li>
                                     <li><a href="contact-us.php">Contact Us</a></li>
+                                    <li>
+                                      <a href="#">
+                                       <i class="bx bx-user me-1"></i> Login
+                                          </a>
+                                       </li>
                                 </ul>
                             </div>
                             <div class="top__bar-right-social">
@@ -99,6 +118,12 @@
                                                 class="bx bxl-twitter"></i></a></li>
                                     <li><a href="https://www.linkedin.com/" target="_blank"><i
                                                 class="bx bxl-linkedin"></i></a></li>
+                                                <li>
+    <a href="https://www.youtube.com/" target="_blank">
+        <i class="bx bxl-youtube"></i>
+    </a>
+</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -145,13 +170,15 @@
                                                 class="nav-link">Global Collaborations</a></li>
                                         <li class="nav-item"><a href="social-impact-&-SDG-contributions.php" class="nav-link">Social
                                                 Impact & SDG Contributions</a></li>
+                                                  <li class="nav-item"><a href="leadership-team.php"
+                                                class="nav-link">Leadership Team</a></li>
                                         <li class="nav-item"><a href="annual-report.php" class="nav-link">Annual
                                                 Report</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="hausla.php" class="nav-link" target="blank">
                                         Hausla
                                         <i class="bx bx-chevron-down"></i>
                                     </a>
@@ -165,8 +192,7 @@
                                                 Appointment</a></li>
                                         <li class="nav-item"><a href="event-reports-media-gallery.php"
                                                 class="nav-link">Event Reports & Media Gallery</a></li>
-                                        <li class="nav-item"><a href="leadership-team.php"
-                                                class="nav-link">Leadership Team</a></li>
+                                      
 
                                                 
                                     </ul>
@@ -180,29 +206,29 @@
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a href="adult-CTVS.php" class="nav-link">Adult CTVS
                                                 (Cardiothoracic and Vascular Surgery)</a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link">Anaesthesia</a>
+                                        <li class="nav-item"><a href="anaesthesia.php" class="nav-link">Anaesthesia</a>
                                         </li>
-                                        <li class="nav-item"><a href="#" class="nav-link">Art Therapy</a>
+                                        <li class="nav-item"><a href="art-therapy.php" class="nav-link">Art Therapy</a>
                                         </li>
-                                        <li class="nav-item"><a href="#"
+                                        <li class="nav-item"><a href="breast-and-endocrine-surgery.php"
                                                 class="nav-link">Breast and Endocrine Surgery</a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link">Cardiac
+                                        <li class="nav-item"><a href="cardiac-sciences.php" class="nav-link">Cardiac
                                                 Sciences</a></li>
-                                        <li class="nav-item"><a href="clinical-&-diagnostic-services.php"
+                                        <li class="nav-item"><a href="counselling-psychology.php"
                                                 class="nav-link">Counselling Psychology</a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link">Critical
+                                        <li class="nav-item"><a href="critical-care.php" class="nav-link">Critical
                                                 Care</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="academic-programs.php" class="nav-link">
+                                    <a href="#" class="nav-link">
                                         Academic Programs
                                         <i class="bx bx-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a href="certificate-&-online-programs.php"
-                                                class="nav-link">Certificate & Online Programs</a></li>
+                                                class="nav-link">Certificate Programs</a></li>
                                         <li class="nav-item"><a href="diploma-programs.php" class="nav-link">Diploma
                                                 Programs</a></li>
                                         <li class="nav-item"><a href="undergraduate-programs.php"
@@ -212,7 +238,7 @@
 
                                         <li class="nav-item ">
                                             <a href="academic-programs.php" class="nav-link">
-                                                Other Academic Offerings
+                                                NIHE offerings
                                             </a>
                                         </li>
                                     </ul>
@@ -224,15 +250,14 @@
                                         <i class="bx bx-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a
-                                                href="ongoing-projects-collaborations.php"
-                                                class="nav-link">Ongoing Projects & International Collaborations</a>
-                                        </li>
-
-                                        <li class="nav-item ">
+                                          <li class="nav-item ">
                                             <a href="research-&-publications.php" class="nav-link">
                                                 Research & Publications
                                             </a>
+                                        </li>
+                                        <li class="nav-item"><a
+                                                href="ongoing-projects-collaborations.php"
+                                                class="nav-link">Ongoing Projects & International Collaborations</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="research-ethics-integrity-guidelines.php"

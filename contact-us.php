@@ -47,7 +47,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Contact Us</h2>
-    <p class="inde">Home › Contact Us</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -58,6 +57,106 @@
   </svg>
 </div>
 
+
+		<!-- Start Contact Area -->
+	<section class="contact-area ptb-100">
+	<div class="container">
+		<div class="row align-items-center justify-content-center">
+			
+			<!-- CONTACT FORM -->
+			<div class="col-lg-8">
+				<div class="contacts-form">
+					<div class="contact-title wow animate__animated animate__zoomInLeft">
+						<h2>Drop us a message for any query</h2>
+					</div>
+
+					<form id="contactForm" class="wow animate__animated animate__zoomInDown">
+						<div class="row justify-content-center">
+
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+									<input type="text" name="name" class="form-control" placeholder="Name" required>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+									<input type="email" name="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+									<input type="text" name="msg_subject" class="form-control" placeholder="Subject" required>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+									<input type="text" name="phone_number" class="form-control" placeholder="Phone" required>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="form-group">
+									<textarea name="message" class="form-control" cols="30" rows="6" placeholder="Message" required></textarea>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="form-group checkboxs">
+									<input type="checkbox" id="chb2">
+									<p>
+										Accept <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+									</p>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-md-12">
+								<button type="submit" class="default-btn btn-two">
+									<span>Send Message</span>
+								</button>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!-- CONTACT INFO RIGHT SIDE -->
+			<div class="col-lg-4">
+
+				<ul class="contact-info wow animate__animated animate__zoomInUp">
+          	<li>
+						<i class="bx bxs-map"></i>
+						<h3>Address</h3>
+						<a href="https://maps.app.goo.gl/d5XLgyZQ7Vvbqrrq7">1040 B, Near Mount Carmel School, Sector-C, Mahanagar, Lucknow, Uttar Pradesh 226006</a>
+					</li>
+					<li>
+						<i class="bx bx-envelope"></i>
+						<h3>Email Us</h3>
+						<a href="mailto:imhrcindia@gmail.com">imhrcindia@gmail.com</a>
+					</li>
+
+					<li>
+						<i class="bx bx-phone-call"></i>
+						<h3>Phone Numbers</h3>
+						<a href="tel:+91-0000000000">+915223190284</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+		<!-- Start Map Area -->
+		<div class="map-area">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d455546.915927005!2d80.961933!3d26.873003000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0775c3d577%3A0xf51448744a4618ea!2sHAUSLA%20Early%20Intervention%20and%20Neuropsychological%20Rehabilitation%20Centre!5e0!3m2!1sen!2sin!4v1766060854204!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<!-- End Map Area -->
   <?php include 'includes/footer.php'; ?>
 
     <!-- Jquery Min JS -->

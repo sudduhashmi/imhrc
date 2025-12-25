@@ -114,7 +114,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Book Appointment</h2>
-    <p class="inde">Home › Book Appointment</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -150,7 +149,7 @@
     <div class="col-md-6">
       <label class="form-label fw-bold">Full Name</label>
       <input type="text" name="name" class="form-control form-control-lg"
-             placeholder="Enter patient full name" required>
+             placeholder="Enter full name" required>
     </div>
 
     <div class="col-md-6">

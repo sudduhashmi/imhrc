@@ -98,12 +98,16 @@
   padding: 10px 14px; border-radius: 8px; border: 0; cursor: pointer; font-weight: 600;
 }
 .btn-download {
-    background: linear-gradient(90deg, #324cc5, #324cc5);
-  color: #fff;
+    background: linear-gradient(90deg, #1d274b, #1d274b);
+    color: #fff;
+    border: 1px solid #1d274b;
+}
+a.btn.btn-download:hover {
+    color: #fff;
 }
 .btn-preview {
-    background: #009ad6;
-    color: #ffffff;
+    background: #ffb800;
+    color: #000000;
 }
 
 /* MODAL */
@@ -139,7 +143,6 @@ iframe { width: 100%; height: 100%; border: none; }
 <div class="page-title-wave">
   <div class="container">
     <h2>Annual Report</h2>
-    <p class="inde">Home › Annual Report</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -151,23 +154,6 @@ iframe { width: 100%; height: 100%; border: none; }
 </div>
 
 <div class="container pb-5">
-
-  <!-- Header -->
-  <div class="header">
-    <div>
-      <div class="kicker">Resources</div>
-      <h2 class="title">Annual Reports</h2>
-      <p class="subtitle">
-        Transparent governance, program expansion & mental health impact —
-        download detailed annual performance reports.
-      </p>
-    </div>
-
-    <div class="count-area">
-      <small>Showing: <strong id="count">9</strong> reports</small>
-    </div>
-  </div>
-
   <!-- HERO -->
   <div class="hero">
     <div class="hero-left">
@@ -191,9 +177,7 @@ iframe { width: 100%; height: 100%; border: none; }
       </div>
     </div>
 
-    <div class="hero-right">
-      <img src="https://via.placeholder.com/450x300.png?text=Annual+Reports+Preview" alt="reports">
-    </div>
+   
   </div>
 
   <!-- GRID -->

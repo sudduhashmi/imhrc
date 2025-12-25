@@ -141,7 +141,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2> Self-Help Resources & Toolkits</h2>
-    <p>Empower yourself with practical guides, worksheets, and toolkits for mental well-being.</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">

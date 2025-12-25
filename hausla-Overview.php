@@ -38,6 +38,98 @@
     <!-- Title -->
     <title>IMHRC</title>
     <style>
+/* REQUIRED FOR OVERLAY */
+.carousel-item {
+  position: relative;
+}
+
+/* IMAGE */
+.slider-img {
+  width: 100%;
+  /* height: 420px; */
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.slider-overlay {
+position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgb(0 0 0 / 75%), rgb(0 0 0 / 75%));
+    z-index: 1;
+}
+
+/* CENTER CONTENT – SAFE WAY */
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.custom-caption h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+      color: #ffb800;
+}
+.btn-danger {
+    color: #000000;
+    background-color: #ffb800;
+    border-color: #ffb800;
+    font-weight: 600;
+}
+.btn-success {
+    color: #000000;
+    background-color: #ffb800;
+    border-color: #ffb800;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    color: #000000;
+    background-color: #ffb800;
+    border-color: #ffb800;
+    font-weight: 600;
+}
+.custom-caption p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* ARROW FIX */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 55px;
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+  background-color: #ffb800; /* HAUSLA red */
+  border-radius: 50%;
+  padding: 18px;
+  background-size: 55%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .slider-img {
+    height: 260px;
+  }
+
+  .custom-caption h2 {
+    font-size: 22px;
+  }
+
+  .custom-caption p {
+    font-size: 14px;
+  }
+}
+
       .section-about {
   background: linear-gradient(180deg, #f8faff, #ffffff);
 }
@@ -77,8 +169,8 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 14px;
-  font-weight: 500;
-  color: #333;
+  font-weight: 600;
+
 }
 
 .why-list i {
@@ -86,7 +178,10 @@
   font-size: 18px;
   flex-shrink: 0;
 }
-
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgb(255 184 0) !important;
+}
     </style>
 </head>
 
@@ -95,18 +190,61 @@
 
    <?php include 'includes/header.php'; ?>
    	<!-- Start Page Title Area -->
-<div class="page-title-wave">
-  <div class="container">
-    <h2>HAUSLA Overview</h2>
-    <p class="inde">Home › HAUSLA  Overview</p>
+<div id="autoSlider" class="carousel slide custom-slider" data-bs-ride="carousel" data-bs-interval="3000">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#autoSlider" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#autoSlider" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#autoSlider" data-bs-slide-to="2"></button>
   </div>
 
-  <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#ffffff" fill-opacity="1" 
-      d="M0,64L48,90.7C96,117,192,171,288,170.7C384,171,480,117,576,85.3C672,53,768,43,864,74.7C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,
-      1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-    </path>
-  </svg>
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="assets/img/hausla-img/5.jpeg" class="slider-img">
+      <div class="slider-overlay"></div>
+      <div class="carousel-caption custom-caption">
+        <h2>HAUSLA – Early Intervention & Neuro-Psychological Rehabilitation Center</h2>
+        <p>Supporting children and adults with developmental, behavioural and psychological challenges through evidence-based care.</p>
+        <a href="#" class="btn btn-primary">Know More</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="assets/img/hausla-img/2.jpeg" class="slider-img">
+      <div class="slider-overlay"></div>
+      <div class="carousel-caption custom-caption">
+        <h2>Comprehensive Therapy & Assessment</h2>
+        <p>Early Intervention, Behaviour Therapy, Speech Therapy, Occupational Therapy, Counselling & Rehabilitation Programs.</p>
+        <a href="#" class="btn btn-danger">Our Services</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="assets/img/hausla-img/5.jpeg" class="slider-img">
+      <div class="slider-overlay"></div>
+      <div class="carousel-caption custom-caption">
+        <h2>Trusted Care Backed by Government Recognition</h2>
+        <p>An initiative of IPYF Trust, registered with the Department of Empowerment of Persons with Disabilities, Govt. of Uttar Pradesh.</p>
+        <a href="#" class="btn btn-success">Contact HAUSLA</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev hausla-arrow" type="button" data-bs-target="#autoSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next hausla-arrow" type="button" data-bs-target="#autoSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
 </div>
 
 <section class="hausla-overview py-5 ">
@@ -115,7 +253,7 @@
     <div class="text-center mb-5">
       <img src="assets/img/hausla-logo.png" alt="Hausla Logo" style="max-width:240px;" class="mb-3">
       <h2 class="fw-bold text-primary">HAUSLA – Early Intervention & Neuro-Psychological Rehabilitation Center, Lucknow</h2>
-      <p class="text-muted w-75 mx-auto fs-5">
+      <p class="  mx-auto fs-5">
         HAUSLA is an initiative of IPYF Trust, registered with the Department of Empowerment of Persons with Disabilities, Government of Uttar Pradesh.
         The center provides evidence-based Early Intervention, Neuro-Psychological Assessment, Behaviour Therapy, Speech Therapy, Occupational Therapy, 
         Counselling, Day Care Services and Rehabilitation programs for children and adults with developmental, behavioural and psychological challenges.
@@ -132,7 +270,7 @@
   <!-- Mission Section -->
   <section class="mb-5">
     <h3 class="fw-bold text-primary">Our Mission</h3>
-    <p class="fs-5 text-muted">
+    <p class="fs-5 ">
       At HAUSLA, our mission is to provide early identification and intervention for children with developmental challenges. 
       We focus on holistic treatment through evidence-based therapies, personalized care plans, and continuous rehabilitation support. 
       By addressing cognitive, emotional, social, and behavioral development, we strive to enhance the overall quality of life for every individual, 
@@ -143,7 +281,7 @@
   <!-- Vision Section -->
    <section class="mb-5">
     <h3 class="fw-bold text-primary">Our Vision</h3>
-    <p class="fs-5 text-muted">
+    <p class="fs-5 ">
       Our vision is to become a leading center for early intervention and special education in Lucknow, recognized for excellence, compassion, and 
       innovation in child development. We aim to create an inclusive society where every child, regardless of their abilities, has access to 
       the support, guidance, and resources necessary to thrive and lead a fulfilling life.
@@ -177,7 +315,7 @@
           Why <span>HAUSLA?</span>
         </h3>
 
-        <p class="text-muted mb-4">
+        <p class=" mb-4">
           HAUSLA is a government-recognized center delivering evidence-based
           therapy and early intervention through a compassionate,
           multidisciplinary approach.

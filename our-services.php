@@ -47,7 +47,7 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Our Services</h2>
-    <p class="inde">Home › Services</p>
+    <p> Holistic Early Intervention, Therapy, Assessments & Rehabilitation Services for Children and Adults.</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -58,8 +58,6 @@
   </svg>
 </div>
 
-<!-- BOXICONS CDN -->
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
 <style>
   .service-card {
@@ -79,7 +77,7 @@
   .service-icon {
     font-size: 55px;
     margin-bottom: 15px;
-    color: #ff8c00;
+    color: #ffb800;
   }
   .read-more-btn {
     border: none;
@@ -92,36 +90,16 @@
     display: none;
     margin-top: 10px;
   }
+  .btn-primary {
+    color: #ffffff;
+    background-color: #1d274b;
+    border-color: #1d274b;
+}
 </style>
-
-<script>
-  function toggleReadMore(id) {
-    const content = document.getElementById(id);
-    const btn = document.querySelector(`[data-target='${id}']`);
-
-    if (content.style.display === "none" || content.style.display === "") {
-      content.style.display = "block";
-      btn.innerHTML = "Read Less";
-    } else {
-      content.style.display = "none";
-      btn.innerHTML = "Read More";
-    }
-  }
-</script>
 
 <section class="py-5 ">
   <div class="container">
-
-    <div class="text-center mb-5">
- <h2 class="fw-bold display-6">Available Services</h2>
-<p class="text-muted fs-5">
-  Holistic Early Intervention, Therapy, Assessments & Rehabilitation Services for Children and Adults.
-</p>
-
-    </div>
-
     <div class="row g-4">
-
       <!-- Early Intervention -->
       <div class="col-md-4">
         <div class="service-card text-center">
@@ -136,8 +114,10 @@
               The focus is on improving social interaction, attention, communication, cognitive growth and school readiness skills.
             </p>
           </div>
-
-          <button class="read-more-btn" data-target="read1" onclick="toggleReadMore('read1')">Read More</button>
+<a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -155,8 +135,10 @@
               Therapy supports both children and adults facing stammering, delayed speech, unclear speech and language disorders.
             </p>
           </div>
-
-          <button class="read-more-btn" data-target="read2" onclick="toggleReadMore('read2')">Read More</button>
+<a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -174,8 +156,10 @@
               Helps children improve coordination, balance, attention and independence in routine activities.
             </p>
           </div>
-
-          <button class="read-more-btn" data-target="read3" onclick="toggleReadMore('read3')">Read More</button>
+<a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -193,8 +177,10 @@
               Includes reinforcement-based strategies and emotional regulation techniques for long-term improvement.
             </p>
           </div>
-
-          <button class="read-more-btn" data-target="read4" onclick="toggleReadMore('read4')">Read More</button>
+<a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -212,8 +198,10 @@
               Useful for identifying learning disabilities, emotional issues and developmental challenges.
             </p>
           </div>
-
-          <button class="read-more-btn" data-target="read5" onclick="toggleReadMore('read5')">Read More</button>
+<a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -232,7 +220,10 @@
             </p>
           </div>
 
-          <button class="read-more-btn" data-target="read6" onclick="toggleReadMore('read6')">Read More</button>
+        <a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -250,8 +241,10 @@
               Helps children and parents cope with emotional challenges, behavioural issues and relationship difficulties.
             </p>
           </div>
-
-          <button class="read-more-btn" data-target="read7" onclick="toggleReadMore('read7')">Read More</button>
+<a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -269,8 +262,10 @@
               Ideal for children needing continuous developmental engagement and a safe, friendly environment.
             </p>
           </div>
-
-          <button class="read-more-btn" data-target="read8" onclick="toggleReadMore('read8')">Read More</button>
+<a href="art-therapy.php"
+   class="btn btn-primary mt-3">
+  Read More
+</a>
         </div>
       </div>
 
@@ -282,9 +277,7 @@
 
 
 
-<style>
 
-</style>
 
   <?php include 'includes/footer.php'; ?>
 

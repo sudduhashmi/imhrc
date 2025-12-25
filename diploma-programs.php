@@ -46,12 +46,7 @@
       --card-radius:14px;
     }
 
-    body{
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:var(--brand);
-      background: #ffffff;
-      line-height:1.5;
-    }
+  
 
     /* HERO */
     .hero{
@@ -177,7 +172,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Diploma Programs</h2>
-    <p class="inde">Home › Diploma Programs</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -192,17 +186,16 @@
 <div class="container">
 <div class="row align-items-center">
 <div class="col-lg-8">
-<span class="badge-accent">Academic Programs</span>
+<span class="badge-accent">Diploma Programs</span>
 <h1 class="mt-3">Diploma Programs in Psychology & Mental Health</h1>
 <p>
 IMHRC Diploma Programs are professionally designed to offer in-depth
 training in psychology and mental health with supervised clinical exposure,
 practical skill development and industry-recognized certification.
 </p>
-<button class="btn btn-light btn-lg " data-bs-toggle="modal" data-bs-target="#enrollModal">
+<a class="btn btn-light btn-lg " href="admission-form.php">
 Enroll Now
-</button>
- <a href="#programs" class="btn btn-outline-light btn-lg">View Programs</a>
+</a>
 </div>
 
 <div class="col-lg-4 text-center">
@@ -234,7 +227,7 @@ health roles.
 <li><i class="bi bi-check2-circle me-2"></i> Career mentoring & certification</li>
 </ul>
 
-<a class="btn btn-enroll w-100 mt-3" data-bs-toggle="modal" data-bs-target="#enrollModal">
+<a href="admission-form.php" class="btn btn-enroll w-100 mt-3">
 Apply for Diploma
 </a>
 
@@ -322,91 +315,7 @@ training hours and competencies is issued.
 </div>
 </main>
 
-<!-- ENROLL MODAL -->
-<div class="modal fade" id="enrollModal">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content p-4">
 
-      <h5 class="fw-bold mb-3">Diploma Program Enrollment</h5>
-
-      <form id="enrollForm">
-        <div class="row g-3">
-
-          <!-- Program -->
-          <div class="col-md-6">
-            <select id="formProgram" class="form-select" required>
-              <option value="">Select Program</option>
-              <option>Diploma in Clinical Psychology</option>
-              <option>Diploma in Counselling Psychology</option>
-              <option>Diploma in Child Psychology</option>
-              <option>Diploma in Mental Health & Wellness</option>
-            </select>
-          </div>
-
-          <!-- Mode -->
-          <div class="col-md-6">
-            <select id="formMode" class="form-select" required>
-              <option value="">Mode</option>
-              <option value="online">Online</option>
-              <option value="offline">Offline</option>
-              <option value="hybrid">Hybrid</option>
-            </select>
-          </div>
-
-          <!-- Full Name -->
-          <div class="col-md-6">
-            <input class="form-control" placeholder="Full Name" required>
-          </div>
-
-          <!-- Email -->
-          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email" required>
-          </div>
-
-          <!-- Phone -->
-          <div class="col-md-6">
-            <input type="tel" class="form-control" placeholder="Mobile Number" required>
-          </div>
-
-          <!-- Qualification -->
-          <div class="col-md-6">
-            <select class="form-select" required>
-              <option value="">Highest Qualification</option>
-              <option>12th Passed</option>
-              <option>Graduate</option>
-              <option>Post Graduate</option>
-              <option>Mental Health Professional</option>
-            </select>
-          </div>
-
-          <!-- City -->
-          <div class="col-md-6">
-            <input class="form-control" placeholder="City" required>
-          </div>
-
-          <!-- College -->
-          <div class="col-md-6">
-            <input class="form-control" placeholder="College / University">
-          </div>
-
-          <!-- Experience -->
-          <div class="col-12">
-            <input class="form-control" placeholder="Relevant Experience (if any)">
-          </div>
-
-          <!-- Submit -->
-          <div class="col-12">
-            <button class="btn btn-enroll w-100 mt-2">
-              Submit Application
-            </button>
-          </div>
-
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -433,7 +342,7 @@ box.innerHTML+=`
 <strong>Fees: ${p.fee}</strong>
 <div class="prog-footer mt-3">
 <button class="btn btn-sm btn-outline-secondary" onclick="openDetails(${p.id})">Overview</button>
-<button class="btn btn-enroll ms-auto" onclick="quickEnroll(${p.id})">Enroll</button>
+<a href="admission-form.php" class="btn btn-enroll ms-auto" >Enroll</a>
 </div>
 </div>
 </div>`;

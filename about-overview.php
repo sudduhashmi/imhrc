@@ -41,8 +41,8 @@
 /* GLOBAL COLORS */
 :root {
   --primary: #6a11cb;
-  --secondary: #2575fc;
-  --gradient: linear-gradient(135deg, #6a11cb, #2575fc);
+  --secondary: #1d274b;
+  --gradient: linear-gradient(135deg, #6a11cb, #1d274b);
   --light-bg: #f4f7ff;
 }
 
@@ -93,7 +93,7 @@ section.who-we-are-section h2 {
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  border-left: 6px solid var(--primary);
+  border-left: 6px solid #1d274b;
 }
 .timeline-item h4 { margin-bottom: 10px; font-weight: 700; }
 
@@ -139,6 +139,13 @@ section.who-we-are-section h2 {
 }
 .team-card h4 { margin-top: 15px; font-weight: 700; }
 .team-card span { color: var(--primary); font-weight: 600; }
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(29 39 75) !important;
+}
+.service-box .icon i {
+    color: #202a4d;
+}
 </style>
 </head>
 
@@ -161,10 +168,10 @@ section.who-we-are-section h2 {
 </div>
 
 
-<section class="under-ipyf-section py-5" style="background:#f4f7ff;">
+<section class="under-ipyf-section py-5" >
     <div class="container">
         <div class="text-center mb-5">
-            <span class="badge px-4 py-2 mb-2" style="font-size: 18px;background:#2575fc; color:#fff; border-radius:20px;">Under IPYF</span>
+            <span class="badge px-4 py-2 mb-2" style="font-size: 18px;background:#1d274b; color:#fff; border-radius:20px;">Under IPYF</span>
             <h2 class="fw-bold display-5">IMHRC’s Foundation Under IPYF</h2>
             <p class="mt-3 fs-5" >
                 IPYF (Indian Progressive Youth Forum) is a national-level organisation working to build emotionally
@@ -175,7 +182,7 @@ section.who-we-are-section h2 {
         </div>
 
         <div class="timeline-wrapper position-relative" style="max-width:900px; margin:auto;">
-            <div class="timeline-line position-absolute top-0 start-50 translate-middle-x" style="width:4px; height:100%; background:#2575fc; opacity:0.4;"></div>
+            <div class="timeline-line position-absolute top-0 start-50 translate-middle-x" style="width:4px; height:100%; background:#1d274b; opacity:0.4;"></div>
 
             <div class="timeline-item d-flex mb-5 position-relative">
                 <div class="timeline-dot position-absolute start-50 translate-middle bg-primary" style="width:22px; height:22px; border-radius:50%;"></div>
@@ -221,18 +228,13 @@ section.who-we-are-section h2 {
 <!-- UNDER IPYF -->
 <section class="under-ipyf py-5">
     <div class="container">
-
-        <div class="section-title text-center mb-5">
-            <h2 class="fw-bold">Under IPYF</h2>
-        </div>
-
         <div class="row g-4">
 
             <!-- Box 1 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-box text-center p-4 shadow-sm rounded h-100">
                     <div class="icon mb-3">
-                        <i class="bx bxs-user-circle fs-1 text-primary"></i>
+                        <i class="bx bxs-user-circle fs-1 "></i>
                     </div>
                     <h4 class="fw-bold mb-2">Youth Empowerment</h4>
                     <p>
@@ -246,7 +248,7 @@ section.who-we-are-section h2 {
             <div class="col-lg-4 col-md-6">
                 <div class="service-box text-center p-4 shadow-sm rounded h-100">
                     <div class="icon mb-3">
-                        <i class="bx bxs-network-chart fs-1 text-primary"></i>
+                        <i class="bx bxs-network-chart fs-1 "></i>
                     </div>
                     <h4 class="fw-bold mb-2">Global Outreach</h4>
                     <p>
@@ -260,7 +262,7 @@ section.who-we-are-section h2 {
             <div class="col-lg-4 col-md-6">
                 <div class="service-box text-center p-4 shadow-sm rounded h-100">
                     <div class="icon mb-3">
-                        <i class="bx bxs-graduation fs-1 text-primary"></i>
+                        <i class="bx bxs-graduation fs-1 "></i>
                     </div>
                     <h4 class="fw-bold mb-2">Training & Certification</h4>
                     <p>
@@ -283,7 +285,7 @@ section.who-we-are-section h2 {
             <span class="badge px-4 py-2 mb-2" style="    background: rgb(29 39 75 / 99%); border-radius:20px;    font-size: 20px;">About IMHRC</span>
             <h2 class="fw-bold display-5">India’s Leading Mental Healthcare & Rehabilitation Network</h2>
             <p class="mt-3 fs-5" >
-                IMHRC (Institute of Mental Health & Rehabilitation Centre) is a premier organisation under the
+                IMHRC (Indian Mental Health & Rehabilitation and Research Centre) is a premier organisation under the
                 <strong>IPYF – Indian Positive Youth Foundation</strong>, dedicated to delivering evidence-based mental
                 healthcare, psychological support, and community-driven rehabilitation services. With a strong network
                 of certified psychologists, psychiatrists, counsellors, and rehabilitation experts, we empower
@@ -436,45 +438,63 @@ section.who-we-are-section h2 {
 
     <section class="partner-section pb-5">
         <div class="container">
-            <div class="feature-marquee">
+       <div class="feature-marquee">
                 <div class="feature-track">
 
                     <div class="feature-box">
-                        <img src="assets/img/affiliation1.png" alt="">
+                        <img src="assets/img/our-affiliations/1.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation2.png" alt="">
+                        <img src="assets/img/our-affiliations/2.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation3.png" alt="">
+                        <img src="assets/img/our-affiliations/3.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation4.png" alt="">
+                        <img src="assets/img/our-affiliations/4.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation5.png" alt="">
+                        <img src="assets/img/our-affiliations/5.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation6.png" alt="">
+                        <img src="assets/img/our-affiliations/6.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation7.png" alt="">
+                        <img src="assets/img/our-affiliations/7.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation8.png" alt="">
+                        <img src="assets/img/our-affiliations/8.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation9.png" alt="">
+                        <img src="assets/img/our-affiliations/9.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation10.png" alt="">
+                        <img src="assets/img/our-affiliations/10.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation11.png" alt="">
+                        <img src="assets/img/our-affiliations/11.jpg" alt="">
                     </div>
                     <div class="feature-box">
-                        <img src="assets/img/affiliation12.png" alt="">
-                    </div>
+                        <img src="assets/img/our-affiliations/12.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/13.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/14.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/15.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/16.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/17.jpg" alt="">
+                    </div> 
+                     <div class="feature-box">
+                        <img src="assets/img/our-affiliations/18.jpg" alt="">
+                    </div> 
                 </div>
             </div>
 

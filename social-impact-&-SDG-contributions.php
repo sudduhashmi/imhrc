@@ -80,7 +80,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Social Impact & SDG Contributions</h2>
-    <p class="inde">Home › Social Impact & SDG Contributions</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -98,7 +97,7 @@
     <!-- TITLE -->
     <div class="text-center mb-5">
       <h2 class="fw-bold display-6">Social Impact & SDG Contributions</h2>
-      <p class="text-muted fs-5">
+      <p class=" fs-5">
         Advancing global well-being through sustainable development, mental health empowerment,
         community initiatives, policy research, and youth-driven leadership aligned with the 
         <strong>UN Sustainable Development Goals (SDGs)</strong>.
@@ -278,6 +277,7 @@
   transition: 0.4s;
   border: 3px solid transparent;
       width: 100%;
+          height: 100%;
 }
 .impact-box:hover {
   transform: translateY(-10px);

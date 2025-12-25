@@ -46,12 +46,7 @@
       --card-radius:14px;
     }
 
-    body{
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:var(--brand);
-      background: #ffffff;
-      line-height:1.5;
-    }
+ 
 
     /* HERO */
     .hero{
@@ -177,7 +172,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Offerings Undergraduate Programs</h2>
-    <p class="inde">Home › Offerings Undergraduate Programs</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -199,10 +193,10 @@ IMHRC Diploma Programs are professionally designed to offer in-depth
 training in psychology and mental health with supervised clinical exposure,
 practical skill development and industry-recognized certification.
 </p>
-<button class="btn btn-light btn-lg " data-bs-toggle="modal" data-bs-target="#enrollModal">
+
+<a href="admission-form.php" class="btn btn-light btn-lg ">
 Enroll Now
-</button>
- <a href="#programs" class="btn btn-outline-light btn-lg">View Programs</a>
+</a>
 </div>
 
 <div class="col-lg-4 text-center">
@@ -234,7 +228,7 @@ industry-oriented curriculum.
 <li><i class="bi bi-check2-circle me-2"></i> Career guidance & higher studies pathway</li>
 </ul>
 
-<a class="btn btn-enroll w-100 mt-3" data-bs-toggle="modal" data-bs-target="#enrollModal">
+<a href="admission-form.php" class="btn btn-enroll w-100 mt-3">
 Apply for Undergraduate Program
 </a>
 
@@ -333,59 +327,7 @@ clinical internships and specialized certifications.
 </div>
 </main>
 
-<!-- ENROLL MODAL -->
-<div class="modal fade" id="enrollModal">
-<div class="modal-dialog modal-lg modal-dialog-centered">
-<div class="modal-content p-4">
 
-<h5 class="fw-bold mb-3">Undergraduate Program Enrollment</h5>
-
-<form>
-<div class="row g-3">
-
-<div class="col-md-6">
-<select id="formProgram" class="form-select" required></select>
-</div>
-
-<div class="col-md-6">
-<select class="form-select" required>
-<option value="">Mode</option>
-<option>Online</option>
-<option>Offline</option>
-<option>Hybrid</option>
-</select>
-</div>
-
-<div class="col-md-6">
-<input class="form-control" placeholder="Full Name" required>
-</div>
-
-<div class="col-md-6">
-<input type="email" class="form-control" placeholder="Email" required>
-</div>
-
-<div class="col-md-6">
-<input type="tel" class="form-control" placeholder="Mobile Number" required>
-</div>
-
-<div class="col-md-6">
-<select class="form-select" required>
-<option value="">Highest Qualification</option>
-<option>12th Pass</option>
-<option>Appearing</option>
-</select>
-</div>
-
-<div class="col-12">
-<button class="btn btn-enroll w-100 mt-2">Submit Application</button>
-</div>
-
-</div>
-</form>
-
-</div>
-</div>
-</div>
 
 <script>
 const programs=[
@@ -418,7 +360,7 @@ box.innerHTML+=`
 <strong>Fees: ${p.fee}</strong>
 <div class="prog-footer mt-3 d-flex">
 <button class="btn btn-sm btn-outline-secondary" onclick="openDetails(${p.id})">Overview</button>
-<button class="btn btn-enroll ms-auto" onclick="quickEnroll(${p.id})">Apply</button>
+<a href="admission-form.php" class="btn btn-enroll ms-auto">Apply</a>
 </div>
 </div>
 </div>`;

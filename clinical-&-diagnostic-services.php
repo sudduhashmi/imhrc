@@ -182,7 +182,6 @@ h2.service-heading {
 <div class="page-title-wave">
   <div class="container">
     <h2>Clinical & Diagnostic Services</h2>
-    <p class="inde">Home › Clinical & Diagnostic Services</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">

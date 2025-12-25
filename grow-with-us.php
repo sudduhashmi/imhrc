@@ -139,7 +139,6 @@
 <div class="page-title-wave">
   <div class="container">
     <h2>Grow with us</h2>
-    <p>Join our team and contribute to advancing mental health awareness and research. Fill out the form below to apply or reach out.</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">

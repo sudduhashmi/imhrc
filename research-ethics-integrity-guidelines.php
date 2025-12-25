@@ -37,17 +37,88 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Title -->
     <title>IMHRC</title>
+    <style>
+.ethics-committee {
+  padding: 80px 20px;
+  color: #333;
+}
+button.btn {
+    background: #ffb904;
+    font-size: 18px;
+}
+.section-header h2 { font-size: 2.5rem; margin-bottom: 10px; }
+.section-header p { font-size: 1.1rem; color: #555;  }
+
+/* Overview */
+.committee-overview { max-width: 900px; margin: 0 auto 50px; font-size: 1rem; line-height: 1.7; color: #555; text-align: center; }
+
+/* Committee Members */
+.committee-members h3 { font-size: 1.8rem; margin-bottom: 25px; text-align: center; }
+.members-grid { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+.member-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 23%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.member-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
+.member-card img { width: 100%;  margin-bottom: 15px; }
+.member-card h4 { font-size: 1.2rem; margin-bottom: 5px; }
+.member-card p { font-size: 0.9rem; color: #777; }
+
+/* Responsibilities */
+.committee-responsibilities { max-width: 900px; margin: 50px auto; }
+.committee-responsibilities h3 { font-size: 1.8rem; margin-bottom: 20px; text-align: center; }
+.committee-responsibilities ul { list-style: disc; padding-left: 20px; line-height: 1.6; color: #555; }
+
+/* CTA Button */
+.cta .btn { display: inline-block; padding: 12px 30px; background: #ffb800; color: #fff; border-radius: 50px; font-weight: 600; text-decoration: none; transition: background 0.3s, transform 0.3s; margin-top: 40px; }
+.cta .btn:hover { background: #3b46d6; transform: translateY(-3px); }
+.btn:hover {
+    color: #ffffff;
+}
+/* Responsive */
+@media(max-width: 992px){ .members-grid { gap: 20px; } }
+@media(max-width: 768px){ .members-grid { flex-direction: column; align-items: center; } }
+</style>
+<style>
+/* Responsibilities */
+.committee-responsibilities.premium { max-width: 1100px; margin: 50px auto; }
+.committee-responsibilities h3 { text-align: center; font-size: 2rem; margin-bottom: 30px; }
+.responsibilities-grid { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+.resp-card { background: #fff; border-radius: 15px; padding: 20px; max-width: 220px; text-align: center; box-shadow: 0 6px 18px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+.resp-card:hover { transform: translateY(-6px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
+.resp-card img { width: 60px; margin-bottom: 15px; }
+.resp-card p { font-size: 0.95rem; color: #555; line-height: 1.5; }
+
+
+/* Modal Styles */
+.modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.6); }
+.modal-content { background: #fff; margin: 5% auto; padding: 30px; border-radius: 15px; max-width: 500px; position: relative; }
+.close-btn { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; }
+form input, form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
+form textarea { resize: vertical; }
+form button { width: 100%; padding: 12px; margin-top: 10px; background: #4e5bff; color: #fff; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; transition: background 0.3s; }
+form button:hover { background: #3b46d6; }
+
+/* Responsive */
+@media(max-width: 768px){ .responsibilities-grid { flex-direction: column; align-items: center; } }
+</style>
 </head>
 
 <body>
 
 
    <?php include 'includes/header.php'; ?>
+   
    	<!-- Start Page Title Area -->
 <div class="page-title-wave">
   <div class="container">
     <h2>Research Ethics & Integrity Guidelines</h2>
-    <p class="inde">Home › Research Ethics & Integrity Guidelines</p>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -76,22 +147,22 @@
       <h3>Committee Members</h3>
       <div class="members-grid">
         <div class="member-card">
-          <img src="assets/img/member1.jpg" alt="Member 1">
+          <img src="assets/img/team/team-1.jpg" alt="Member 1">
           <h4>Dr. Anjali Sharma</h4>
           <p>Chairperson</p>
         </div>
         <div class="member-card">
-          <img src="assets/img/member2.jpg" alt="Member 2">
+          <img src="assets/img/team/team-2.jpg" alt="Member 2">
           <h4>Prof. Rajiv Verma</h4>
           <p>Member</p>
         </div>
         <div class="member-card">
-          <img src="assets/img/member3.jpg" alt="Member 3">
+          <img src="assets/img/team/team-3.jpg" alt="Member 3">
           <h4>Dr. Meera Gupta</h4>
           <p>Member</p>
         </div>
         <div class="member-card">
-          <img src="assets/img/member4.jpg" alt="Member 4">
+          <img src="assets/img/team/team-4.jpg" alt="Member 4">
           <h4>Prof. Amit Singh</h4>
           <p>Member</p>
         </div>
@@ -145,32 +216,7 @@
   </div>
 </div>
 
-<style>
-/* Responsibilities */
-.committee-responsibilities.premium { max-width: 1100px; margin: 50px auto; }
-.committee-responsibilities h3 { text-align: center; font-size: 2rem; margin-bottom: 30px; }
-.responsibilities-grid { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
-.resp-card { background: #fff; border-radius: 15px; padding: 20px; max-width: 220px; text-align: center; box-shadow: 0 6px 18px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
-.resp-card:hover { transform: translateY(-6px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
-.resp-card img { width: 60px; margin-bottom: 15px; }
-.resp-card p { font-size: 0.95rem; color: #555; line-height: 1.5; }
 
-/* CTA Button */
-.cta .btn { padding: 12px 28px; background: #4e5bff; color: #fff; border-radius: 50px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: background 0.3s, transform 0.3s; margin-top: 30px; }
-.cta .btn:hover { background: #3b46d6; transform: translateY(-3px); }
-
-/* Modal Styles */
-.modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.6); }
-.modal-content { background: #fff; margin: 5% auto; padding: 30px; border-radius: 15px; max-width: 500px; position: relative; }
-.close-btn { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; }
-form input, form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
-form textarea { resize: vertical; }
-form button { width: 100%; padding: 12px; margin-top: 10px; background: #4e5bff; color: #fff; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; transition: background 0.3s; }
-form button:hover { background: #3b46d6; }
-
-/* Responsive */
-@media(max-width: 768px){ .responsibilities-grid { flex-direction: column; align-items: center; } }
-</style>
 
 <script>
 // Modal functionality
@@ -195,49 +241,7 @@ document.getElementById('contactCommitteeForm').addEventListener('submit', funct
   </div>
 </section>
 
-<style>
-.ethics-committee {
-  padding: 80px 20px;
-  color: #333;
-}
 
-.section-header h2 { font-size: 2.5rem; margin-bottom: 10px; }
-.section-header p { font-size: 1.1rem; color: #555;  }
-
-/* Overview */
-.committee-overview { max-width: 900px; margin: 0 auto 50px; font-size: 1rem; line-height: 1.7; color: #555; text-align: center; }
-
-/* Committee Members */
-.committee-members h3 { font-size: 1.8rem; margin-bottom: 25px; text-align: center; }
-.members-grid { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
-.member-card {
-    background: #fff;
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 23%;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.member-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
-.member-card img { width: 100%; border-radius: 50%; margin-bottom: 15px; }
-.member-card h4 { font-size: 1.2rem; margin-bottom: 5px; }
-.member-card p { font-size: 0.9rem; color: #777; }
-
-/* Responsibilities */
-.committee-responsibilities { max-width: 900px; margin: 50px auto; }
-.committee-responsibilities h3 { font-size: 1.8rem; margin-bottom: 20px; text-align: center; }
-.committee-responsibilities ul { list-style: disc; padding-left: 20px; line-height: 1.6; color: #555; }
-
-/* CTA Button */
-.cta .btn { display: inline-block; padding: 12px 30px; background: #4e5bff; color: #fff; border-radius: 50px; font-weight: 600; text-decoration: none; transition: background 0.3s, transform 0.3s; margin-top: 40px; }
-.cta .btn:hover { background: #3b46d6; transform: translateY(-3px); }
-
-/* Responsive */
-@media(max-width: 992px){ .members-grid { gap: 20px; } }
-@media(max-width: 768px){ .members-grid { flex-direction: column; align-items: center; } }
-</style>
 
   <?php include 'includes/footer.php'; ?>
 

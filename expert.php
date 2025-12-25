@@ -276,7 +276,6 @@ display: flex;
    	<!-- Start Page Title Area -->
 <div class="page-title-wave">
   <div class="container">
-    <h2>Meet our clinical Experts</h2>
   </div>
 
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">

@@ -4600,9 +4600,10 @@ Contact Area Style
 }
 
 .list-unstyled {
-  color: #dc3545;
-  font-size: 14px;
-  margin-top: 10px;
+    color: #ffb800;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 #msgSubmit {
@@ -6100,9 +6101,9 @@ background: linear-gradient(90deg, #ffb800, #ffb800);
 }
 
 .feature-box img {
-    width: 100%px;
-    height: 125px;
-    object-fit: contain;
+    width: 100%;
+    /* height: 125px; */
+    object-fit: cover;
     /* margin-bottom: 12px; */
 }
 
@@ -6427,7 +6428,7 @@ a.navbar-brand {
     list-style: none;
     display: inline-block;
     margin-right: 5px;
-    padding-right: 20px;
+    padding-right: 10px;
     border-right: 1px solid #1d274b;
 }
 .topbar__three-right ul li a {
@@ -6440,8 +6441,8 @@ a.navbar-brand {
 }
 .top__bar-right-social {
     /* border-left: 1px solid #ffffff; */
-    padding-left: 30px;
-    margin-left: 30px;
+      padding-left: 20px;
+    margin-left: 20px;
 }
 .top__bar-right-social ul li a .bxl-facebook {
     background: #3b5998;
@@ -6452,11 +6453,15 @@ a.navbar-brand {
     color: #fff;
 }
 .top__bar-right-social ul li a .bxl-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: radial-gradient(circle at 30% 107%, #fa554f 0%, #8c3bc0 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
     color: #fff;
 }
 .top__bar-right-social ul li a .bxl-linkedin {
     background: #0965ed;
+    color: #fff;
+}
+.top__bar-right-social ul li a .bxl-youtube {
+    background: #dc3545;
     color: #fff;
 }
 .top__bar-right-social ul li a .bx {
@@ -6464,7 +6469,7 @@ a.navbar-brand {
     width: 32px;
     height: 32px;
     line-height: 32px;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     border-radius: 50%;
     transition: transform 0.2s 
@@ -6476,12 +6481,12 @@ ease;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 0.5rem;
+    /* gap: 0.5rem; */
 }
 .top__bar-right-social ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 7px;
 }
 .top__bar-right-social ul li a {
     display: inline-block;
@@ -6798,7 +6803,7 @@ width: 250px;
 
 .hero-slider .owl-nav button.owl-prev,
 .hero-slider .owl-nav button.owl-next {
-    background: rgba(255,255,255,0.85);
+    background: #ffb800;
     width: 45px;
     height: 45px;
     border-radius: 50%;
